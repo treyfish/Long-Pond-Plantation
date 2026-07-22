@@ -74,6 +74,24 @@
             </figcaption>
           </figure>
         </div>
+
+        <div class="mt-16">
+          <h3 class="label-cap text-center mb-8">Moments at Long Pond</h3>
+          <div class="columns-2 md:columns-3 gap-4">
+          <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/moment-bw-kiss.jpg" alt="Kiss beneath the oaks in black and white" />
+          <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/couple-cross-arch.jpg" alt="Couple at the ceremony arbor" />
+          <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/moment-dip-kiss.jpg" alt="Dip kiss at the arbor" />
+          <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/moment-first-look.jpg" alt="Father's first look" />
+          <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/wedding-party-cheer.jpg" alt="The wedding party celebrates" />
+          <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/moment-bridesmaids.jpg" alt="Bridesmaids in pink" />
+          <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/moment-walk.jpg" alt="Walking the grounds hand in hand" />
+          <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/moment-car.jpg" alt="Vintage car send-off" />
+          <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/moment-bride-oak.jpg" alt="Heading to the ceremony" />
+          <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/moment-sunset-arch.jpg" alt="Sunset vows at the arch" />
+          <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/moment-golden.jpg" alt="Champagne pop on the dance floor" />
+          <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/sunset-field-couple.jpg" alt="Sunset over the marsh field" />
+          </div>
+        </div>
       </div>
     </section>
 
@@ -82,12 +100,17 @@
       <div class="max-w-site mx-auto">
         <h2 class="h-serif text-2xl md:text-3xl text-center">Styled Shoots</h2>
         <div class="w-16 h-px bg-lp-ink/40 mx-auto mt-6"></div>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
-          <img class="w-full md:col-span-2 md:row-span-2 aspect-square md:aspect-auto md:h-full object-cover shadow-card" src="assets/img/sunset-roses-column.jpg" alt="Styled welcome table" />
-          <img class="w-full aspect-square object-cover shadow-card" src="assets/img/welcome-sign.jpg" alt="Lavender linen tablescape" />
-          <img class="w-full aspect-square object-cover shadow-card" src="assets/img/always-you-sign.jpg" alt="Gold-stand floral centerpiece" />
-          <img class="w-full aspect-square object-cover shadow-card" src="assets/img/place-setting.jpg" alt="Holiday styling in the historic home" />
-          <img class="w-full aspect-square object-cover shadow-card" src="assets/img/wedding-cake.jpg" alt="Candlelit details" />
+        <div class="columns-2 md:columns-3 gap-4 mt-12">
+          <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/chapel-styled.jpg" alt="Styled celebration inside the White Barn" />
+          <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/sunset-roses-column.jpg" alt="Floral-draped ceremony arbor" />
+          <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/welcome-sign.jpg" alt="Welcome sign styling" />
+          <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/place-setting.jpg" alt="Place setting detail" />
+          <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/always-you-sign.jpg" alt="It was always you — signage wall" />
+          <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/detail-signage.jpg" alt="Acrylic welcome signage with greenery" />
+          <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/settee.jpg" alt="The rental settee" />
+          <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/barn-starlight-wall.jpg" alt="Starlight wall backdrop" />
+          <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/sweetheart-table.jpg" alt="Sweetheart table" />
+          <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/wedding-cake.jpg" alt="Custom wedding cake" />
         </div>
       </div>
     </section>
@@ -97,12 +120,17 @@
       <div class="max-w-site mx-auto relative z-10">
         <h2 class="h-serif text-2xl md:text-3xl text-center">The Property</h2>
         <div class="w-16 h-px bg-lp-ink/40 mx-auto mt-6"></div>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
-          <img class="w-full md:col-span-2 md:row-span-2 aspect-square md:aspect-auto md:h-full object-cover shadow-card" src="assets/img/mossy-oaks-marsh.jpg" alt="Aerial of the full property" />
-          <img class="w-full aspect-square object-cover shadow-card" src="assets/img/fountain-golden.jpg" alt="Live oaks with Spanish moss" />
-          <img class="w-full aspect-square object-cover shadow-card" src="assets/img/barn-dusk.jpg" alt="Event barn at dusk" />
-          <img class="w-full aspect-square object-cover shadow-card" src="assets/img/marsh-birds.jpg" alt="Marsh sunset" />
-          <img class="w-full aspect-square object-cover shadow-card" src="assets/img/sunset-benches-arch.jpg" alt="Fountain and gardens" />
+        <div class="columns-2 md:columns-3 gap-4 mt-12">
+          <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/mossy-oaks-marsh.jpg" alt="Mossy live oak over the marsh" />
+          <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/barn-exterior-day.jpg" alt="The White Barn beneath the oaks" />
+          <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/fountain-golden.jpg" alt="The fountain at golden hour" />
+          <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/historic-home-aerial.jpg" alt="The historic home from above" />
+          <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/benches-sunset.jpg" alt="Ceremony benches at sunset" />
+          <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/barn-dusk.jpg" alt="The White Barn lit at dusk" />
+          <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/grounds-chairs-oaks.jpg" alt="Ceremony chairs beneath the oaks" />
+          <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/marsh-birds.jpg" alt="Birds over Long Pond" />
+          <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/sunset-benches-arch.jpg" alt="Sunset over the ceremony site" />
+          <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/firepit-lawn.jpg" alt="The property from above" />
         </div>
       </div>
     </section>
