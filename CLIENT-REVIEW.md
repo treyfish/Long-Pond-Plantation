@@ -17,11 +17,12 @@ Design system: Playfair Display letterspaced serif caps + Jost light sans + Grea
 
 ## Placeholder vs final
 
-**Everything visual is placeholder** (placehold.co, labeled per slot) — swaps happen in Phase 4 when the client media package lands in `brand_assets/`. Specifically pending:
-- Hero video (Maudie Lucas original file) + all photography
-- Watercolor logo asset (text lockup used meanwhile)
+**Interim media pass done (2026-07-21):** the site now uses real media harvested from the client's own channels — the Maudie Lucas film (downloaded from the public Facebook reel; homepage hero is a muted 50s cut + 23 stills), 28 professional photos from the old Wix site's media library, the watercolor logo (now in the header), the Long Pond Sunset candle photo, and Woodys bottle/latte/espresso shots. Still pending from the client:
+- ORIGINAL Maudie Lucas video + photo files (current versions are FB/web rips — good, but originals will be sharper)
 - Package pricing ($X,XXX boxes), phone number, street address
-- Third testimonial; featured-wedding photos (permissions pending)
+- Third testimonial; featured-wedding photos (permissions pending — the two featured cards are still placeholders)
+- A true family portrait for the About page (Stacey's portrait is standing in)
+- Watercolor venue illustration slot on weddings page (still placeholder)
 - Contact form endpoint (currently demo-only, no submission backend)
 
 ## Decision queued for the client (per locked decision #3)

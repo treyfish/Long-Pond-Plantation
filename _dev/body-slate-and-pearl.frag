@@ -1,7 +1,7 @@
     <!-- ======= SP HERO ======= -->
     <section class="relative h-[46vh] min-h-[340px] overflow-hidden">
       <!-- MEDIA SLOT: styled tablescape with glassware + florals -->
-      <img src="https://placehold.co/1920x800/77858B/F2EFED?text=STYLED+TABLESCAPE+%E2%80%94+glassware+%2B+florals" alt="Styled tablescape by Slate and Pearl Events" class="absolute inset-0 w-full h-full object-cover" />
+      <img src="assets/img/sp-bar-cart.jpg" alt="Styled tablescape by Slate and Pearl Events" class="absolute inset-0 w-full h-full object-cover" />
       <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-black/20"></div>
       <div class="absolute inset-0 bg-lp-sage mix-blend-multiply opacity-20"></div>
       <div class="absolute inset-x-0 top-14 text-center space-y-3 rise rise-1">
@@ -24,7 +24,7 @@
         </div>
         <div class="relative overflow-hidden shadow-card order-1 md:order-2">
           <!-- MEDIA SLOT: founder portrait -->
-          <img src="https://placehold.co/1080x1350/DFA398/2B2929?text=FOUNDER+PORTRAIT" alt="The Slate and Pearl founder" class="w-full object-cover" />
+          <img src="assets/img/stacey-portrait.jpg" alt="The Slate and Pearl founder" class="w-full object-cover" />
         </div>
       </div>
     </section>
@@ -37,21 +37,21 @@
         <div class="grid md:grid-cols-3 gap-8 mt-12">
           <div class="bg-lp-white shadow-card p-8 text-center space-y-4">
             <div class="relative overflow-hidden aspect-[4/3]">
-              <img src="https://placehold.co/800x600/77858B/F2EFED?text=wedding+design" alt="Wedding design" class="w-full h-full object-cover" />
+              <img src="assets/img/chapel-styled.jpg" alt="Wedding design" class="w-full h-full object-cover" />
             </div>
             <h3 class="font-display uppercase tracking-hero text-[14px]">Wedding Design</h3>
             <p class="font-sans font-light text-[14px] leading-[1.7]">Full design of your ceremony and reception — florals, tablescapes, and every thoughtful detail in between.</p>
           </div>
           <div class="bg-lp-white shadow-card p-8 text-center space-y-4">
             <div class="relative overflow-hidden aspect-[4/3]">
-              <img src="https://placehold.co/800x600/809A91/F2EFED?text=coordinating" alt="Coordinating" class="w-full h-full object-cover" />
+              <img src="assets/img/ceremony-crowd-oaks.jpg" alt="Coordinating" class="w-full h-full object-cover" />
             </div>
             <h3 class="font-display uppercase tracking-hero text-[14px]">Coordinating</h3>
             <p class="font-sans font-light text-[14px] leading-[1.7]">Day-of and full-service coordination so you can be a guest at your own celebration.</p>
           </div>
           <div class="bg-lp-white shadow-card p-8 text-center space-y-4">
             <div class="relative overflow-hidden aspect-[4/3]">
-              <img src="https://placehold.co/800x600/5B5757/F2EFED?text=rentals+%2B+decor" alt="Rentals and decor" class="w-full h-full object-cover" />
+              <img src="assets/img/settee.jpg" alt="Rentals and decor" class="w-full h-full object-cover" />
             </div>
             <h3 class="font-display uppercase tracking-hero text-[14px]">Rentals &amp; Decor</h3>
             <p class="font-sans font-light text-[14px] leading-[1.7]">A curated rental collection — linens, candles, signage, and statement pieces — styled for your day.</p>

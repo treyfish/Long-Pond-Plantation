@@ -13,7 +13,7 @@
           </span>
           <div class="relative overflow-hidden flex-1 aspect-[21/8]">
             <!-- MEDIA SLOT: wide bridal-party photo -->
-            <img src="https://placehold.co/1800x700/809A91/F2EFED?text=FEATURED+WEDDINGS+%E2%80%94+bridal+party+wide" alt="Bridal party on the ceremony lawn" class="absolute inset-0 w-full h-full object-cover" />
+            <img src="assets/img/ceremony-crowd-oaks.jpg" alt="Bridal party on the ceremony lawn" class="absolute inset-0 w-full h-full object-cover" />
           </div>
         </div>
         <span class="md:hidden tile-bar">Featured Weddings</span>
@@ -26,7 +26,7 @@
           </span>
           <div class="relative overflow-hidden flex-1 aspect-[21/8]">
             <!-- MEDIA SLOT: styled tablescape close-up -->
-            <img src="https://placehold.co/1800x700/DFA398/2B2929?text=STYLED+SHOOTS+%E2%80%94+tablescape+close-up" alt="Styled reception tablescape" class="absolute inset-0 w-full h-full object-cover" />
+            <img src="assets/img/chapel-styled.jpg" alt="Styled reception tablescape" class="absolute inset-0 w-full h-full object-cover" />
           </div>
         </div>
         <span class="md:hidden tile-bar">Styled Shoots</span>
@@ -39,7 +39,7 @@
           </span>
           <div class="relative overflow-hidden flex-1 aspect-[21/8]">
             <!-- MEDIA SLOT: oaks + marsh golden hour -->
-            <img src="https://placehold.co/1800x700/5C7268/F2EFED?text=THE+PROPERTY+%E2%80%94+oaks+%2B+marsh+golden+hour" alt="Live oaks and marsh at golden hour" class="absolute inset-0 w-full h-full object-cover" />
+            <img src="assets/img/benches-sunset.jpg" alt="Live oaks and marsh at golden hour" class="absolute inset-0 w-full h-full object-cover" />
           </div>
         </div>
         <span class="md:hidden tile-bar">The Property</span>
@@ -83,11 +83,11 @@
         <h2 class="h-serif text-2xl md:text-3xl text-center">Styled Shoots</h2>
         <div class="w-16 h-px bg-lp-ink/40 mx-auto mt-6"></div>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
-          <img class="w-full md:col-span-2 md:row-span-2 aspect-square md:aspect-auto md:h-full object-cover shadow-card" src="https://placehold.co/700x700/DFA398/2B2929?text=welcome+table+styling" alt="Styled welcome table" />
-          <img class="w-full aspect-square object-cover shadow-card" src="https://placehold.co/700x700/EBC8BE/2B2929?text=lavender+linens" alt="Lavender linen tablescape" />
-          <img class="w-full aspect-square object-cover shadow-card" src="https://placehold.co/700x700/C2A14A/2B2929?text=gold-stand+florals" alt="Gold-stand floral centerpiece" />
-          <img class="w-full aspect-square object-cover shadow-card" src="https://placehold.co/700x700/809A91/F2EFED?text=holiday+styling" alt="Holiday styling in the historic home" />
-          <img class="w-full aspect-square object-cover shadow-card" src="https://placehold.co/700x700/5B5757/F2EFED?text=candlelit+details" alt="Candlelit details" />
+          <img class="w-full md:col-span-2 md:row-span-2 aspect-square md:aspect-auto md:h-full object-cover shadow-card" src="assets/img/sunset-roses-column.jpg" alt="Styled welcome table" />
+          <img class="w-full aspect-square object-cover shadow-card" src="assets/img/welcome-sign.jpg" alt="Lavender linen tablescape" />
+          <img class="w-full aspect-square object-cover shadow-card" src="assets/img/always-you-sign.jpg" alt="Gold-stand floral centerpiece" />
+          <img class="w-full aspect-square object-cover shadow-card" src="assets/img/place-setting.jpg" alt="Holiday styling in the historic home" />
+          <img class="w-full aspect-square object-cover shadow-card" src="assets/img/wedding-cake.jpg" alt="Candlelit details" />
         </div>
       </div>
     </section>
@@ -98,11 +98,11 @@
         <h2 class="h-serif text-2xl md:text-3xl text-center">The Property</h2>
         <div class="w-16 h-px bg-lp-ink/40 mx-auto mt-6"></div>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
-          <img class="w-full md:col-span-2 md:row-span-2 aspect-square md:aspect-auto md:h-full object-cover shadow-card" src="https://placehold.co/700x700/5C7268/F2EFED?text=aerial+%E2%80%94+full+property" alt="Aerial of the full property" />
-          <img class="w-full aspect-square object-cover shadow-card" src="https://placehold.co/700x700/809A91/F2EFED?text=live+oaks" alt="Live oaks with Spanish moss" />
-          <img class="w-full aspect-square object-cover shadow-card" src="https://placehold.co/700x700/2B2929/F2EFED?text=event+barn+dusk" alt="Event barn at dusk" />
-          <img class="w-full aspect-square object-cover shadow-card" src="https://placehold.co/700x700/DFA398/2B2929?text=marsh+sunset" alt="Marsh sunset" />
-          <img class="w-full aspect-square object-cover shadow-card" src="https://placehold.co/700x700/F2EFED/809A91?text=fountain+%2B+gardens" alt="Fountain and gardens" />
+          <img class="w-full md:col-span-2 md:row-span-2 aspect-square md:aspect-auto md:h-full object-cover shadow-card" src="assets/img/mossy-oaks-marsh.jpg" alt="Aerial of the full property" />
+          <img class="w-full aspect-square object-cover shadow-card" src="assets/img/fountain-golden.jpg" alt="Live oaks with Spanish moss" />
+          <img class="w-full aspect-square object-cover shadow-card" src="assets/img/barn-dusk.jpg" alt="Event barn at dusk" />
+          <img class="w-full aspect-square object-cover shadow-card" src="assets/img/marsh-birds.jpg" alt="Marsh sunset" />
+          <img class="w-full aspect-square object-cover shadow-card" src="assets/img/sunset-benches-arch.jpg" alt="Fountain and gardens" />
         </div>
       </div>
     </section>

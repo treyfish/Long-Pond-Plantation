@@ -9,3 +9,5 @@
 - **Instagram handle:** Footer links to facebook.com/profile.php?id=61559171769389 and IG "longpondplantationevents" (seen on FB intro) — confirm IG URL.
 - **Watercolor venue illustration:** The White Magnolia weddings page features a commissioned watercolor of the venue — a placeholder slot exists on weddings.html. Does the client want one commissioned (their logo artist may be a fit)?
 - **Package tiers & rates:** Old site never published actual package structure/pricing. packages.html has placeholder $X,XXX weekday/weekend boxes — need real tiers, rates, and inclusions list sign-off.
+- **Interim media notice:** Video + photos currently on the site were pulled from the client's public Facebook and old Wix site as stand-ins. Confirm the client is happy using them (they own them, but flag it) and still request originals from Maudie Lucas for final quality.
+- **Family portrait:** About page currently uses Stacey's solo portrait from the old site — a proper family/couple portrait would be better.

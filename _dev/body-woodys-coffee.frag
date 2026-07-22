@@ -1,7 +1,7 @@
     <!-- ======= WOODYS HERO ======= -->
     <section class="relative h-[46vh] min-h-[340px] overflow-hidden">
       <!-- MEDIA SLOT: latte in branded cup, barn in background -->
-      <img src="https://placehold.co/1920x800/5C7268/F2EFED?text=LATTE+IN+BRANDED+CUP+%E2%80%94+barn+behind" alt="Woodys Coffee latte with the venue behind" class="absolute inset-0 w-full h-full object-cover" />
+      <img src="assets/img/woodys-latte.jpg" alt="Woodys Coffee latte with the venue behind" class="absolute inset-0 w-full h-full object-cover" />
       <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-black/20"></div>
       <div class="absolute inset-0 bg-lp-sage mix-blend-multiply opacity-20"></div>
       <div class="absolute inset-x-0 top-14 text-center space-y-3 rise rise-1">
@@ -24,7 +24,7 @@
         <div class="grid md:grid-cols-3 gap-8 mt-12">
           <div class="bg-lp-white shadow-card text-center">
             <div class="relative overflow-hidden aspect-[4/3]">
-              <img src="https://placehold.co/800x600/5C7268/F2EFED?text=latte+of+the+day" alt="Latte of the day" class="w-full h-full object-cover" />
+              <img src="assets/img/woodys-espresso.jpg" alt="Latte of the day" class="w-full h-full object-cover" />
             </div>
             <div class="p-6 space-y-2">
               <h3 class="font-display uppercase tracking-hero text-[14px]">Latte of the Day</h3>
@@ -33,7 +33,7 @@
           </div>
           <div class="bg-lp-white shadow-card text-center">
             <div class="relative overflow-hidden aspect-[4/3]">
-              <img src="https://placehold.co/800x600/809A91/F2EFED?text=bottled+iced+coffee" alt="Bottled iced coffee" class="w-full h-full object-cover" />
+              <img src="assets/img/woodys-bottle.jpg" alt="Bottled iced coffee" class="w-full h-full object-cover" />
             </div>
             <div class="p-6 space-y-2">
               <h3 class="font-display uppercase tracking-hero text-[14px]">Bottled Iced Coffee</h3>

@@ -1,7 +1,7 @@
     <!-- ======= PAGE HERO ======= -->
     <section class="relative h-[42vh] min-h-[320px] overflow-hidden">
       <!-- MEDIA SLOT: dressed reception table close-up -->
-      <img src="https://placehold.co/1920x700/2B2929/F2EFED?text=RECEPTION+TABLE+%E2%80%94+close-up" alt="Dressed reception table in the event barn" class="absolute inset-0 w-full h-full object-cover" />
+      <img src="assets/img/sweetheart-table.jpg" alt="Dressed reception table in the event barn" class="absolute inset-0 w-full h-full object-cover" />
       <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-black/20"></div>
       <div class="absolute inset-0 bg-lp-sage mix-blend-multiply opacity-20"></div>
       <h1 class="absolute inset-x-0 top-16 text-center font-display uppercase tracking-hero text-white text-2xl md:text-4xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.4)] rise rise-1">Packages &amp; Pricing</h1>
@@ -58,7 +58,7 @@
       <div class="max-w-site mx-auto grid md:grid-cols-2 gap-10 items-center relative z-10">
         <div class="relative overflow-hidden shadow-card">
           <!-- MEDIA SLOT: tea room set for a shower/luncheon -->
-          <img src="https://placehold.co/1200x900/F2EFED/5C7268?text=TEA+ROOM+%E2%80%94+set+for+a+luncheon" alt="Tea room set for a luncheon" class="w-full object-cover" />
+          <img src="assets/img/tea-room.jpg" alt="Tea room set for a luncheon" class="w-full object-cover" />
         </div>
         <div class="space-y-5 text-center md:text-left">
           <h2 class="h-serif text-xl md:text-2xl">Events of Every Size</h2>

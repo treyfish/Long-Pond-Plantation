@@ -7,9 +7,9 @@
       </div>
       <div class="flex justify-center gap-3">
         <!-- MEDIA SLOT: footer gallery strip -->
-        <img src="https://placehold.co/220x220/809A91/F2EFED?text=barn" alt="" class="w-24 h-24 object-cover" />
-        <img src="https://placehold.co/220x220/5C7268/F2EFED?text=chapel" alt="" class="w-24 h-24 object-cover" />
-        <img src="https://placehold.co/220x220/2B2929/F2EFED?text=oaks" alt="" class="w-24 h-24 object-cover" />
+        <img src="assets/img/barn-at-night.jpg" alt="" class="w-24 h-24 object-cover" />
+        <img src="assets/img/chapel-cross.jpg" alt="" class="w-24 h-24 object-cover" />
+        <img src="assets/img/mossy-oaks-marsh.jpg" alt="" class="w-24 h-24 object-cover" />
       </div>
       <div class="text-center md:text-right space-y-1">
         <p class="label-cap">(3XX) XXX-XXXX — pending</p>
