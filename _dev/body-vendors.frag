@@ -49,7 +49,7 @@
 
           <details class="group py-5">
             <summary class="cursor-pointer list-none flex items-center justify-between gap-4 font-display uppercase tracking-hero text-[13px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage">Can we do everything on site?<span class="text-lp-sage transition-transform duration-300 group-open:rotate-45 text-lg leading-none">+</span></summary>
-            <p class="font-sans font-light text-[14px] leading-[1.8] mt-4">Yes — ceremony in the open-air chapel, reception in the event barn, and getting ready in the historic home's bridal and groom suites. One property, your whole day.</p>
+            <p class="font-sans font-light text-[14px] leading-[1.8] mt-4">Yes — your ceremony beneath the live oaks or inside the chandelier-lit White Barn, the reception in the barn, and getting ready in the historic home's bridal suite and guys lounge. One property, your whole day.</p>
           </details>
 
           <details class="group py-5">

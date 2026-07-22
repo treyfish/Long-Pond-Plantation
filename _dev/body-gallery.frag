@@ -26,7 +26,7 @@
           </span>
           <div class="relative overflow-hidden flex-1 aspect-[21/8]">
             <!-- MEDIA SLOT: styled tablescape close-up -->
-            <img src="assets/img/chapel-styled.jpg" alt="Styled reception tablescape" class="absolute inset-0 w-full h-full object-cover" />
+            <img src="assets/img/chapel-styled.jpg" alt="Styled celebration inside the White Barn" class="absolute inset-0 w-full h-full object-cover" />
           </div>
         </div>
         <span class="md:hidden tile-bar">Styled Shoots</span>

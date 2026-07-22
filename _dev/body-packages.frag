@@ -27,7 +27,7 @@
           <div class="w-12 h-px bg-lp-gold mx-auto mt-5"></div>
           <ul class="mt-8 space-y-4 font-sans font-light text-[14px] tracking-bodywide leading-[1.6]">
             <li class="flex gap-3"><span class="text-lp-gold shrink-0">✦</span><span>13-hour venue access</span></li>
-            <li class="flex gap-3"><span class="text-lp-gold shrink-0">✦</span><span>Historic home, the White Barn &amp; choice of ceremony site</span></li>
+            <li class="flex gap-3"><span class="text-lp-gold shrink-0">✦</span><span>Historic home, the White Barn &amp; your choice of ceremony site — beneath the oaks or under the barn's chandelier</span></li>
             <li class="flex gap-3"><span class="text-lp-gold shrink-0">✦</span><span>Wooden crossback chairs &amp; signature wooden tables</span></li>
             <li class="flex gap-3"><span class="text-lp-gold shrink-0">✦</span><span>Ceremony benches + arbor</span></li>
             <li class="flex gap-3"><span class="text-lp-gold shrink-0">✦</span><span>Onsite parking with attendant</span></li>

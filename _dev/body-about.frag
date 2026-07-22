@@ -10,7 +10,7 @@
           <div class="w-16 h-px bg-lp-gold"></div>
           <div class="font-georgia text-[16px] leading-[1.9] text-justify space-y-5">
             <p>Set on a sixteen-acre marsh front in beautiful Levy County lies Long Pond Plantation, owned and operated by the Beauchamp family of Beauchamp Acres. Where past and present meet, our venue blends Southern elegance with the natural beauty of Old Florida — mature live oaks draped in Spanish moss, sunsets that melt the sky in pinks and yellows, and the serene waters of Long Pond itself.</p>
-            <p>Originally constructed in the early 1960s, the unique three-thousand square-foot home at the heart of the property holds an elite bridal &amp; groom suite, tea room, and kitchen — a photographer's dream. Just beyond it, our chandelier-lit open-air chapel and 2,800 square-foot event barn host ceremonies and celebrations of every size, from weddings and reunions to corporate gatherings and holiday parties.</p>
+            <p>Originally constructed in the early 1960s, the unique three-thousand square-foot home at the heart of the property holds an elite bridal &amp; groom suite, tea room, and kitchen — a photographer's dream. Just beyond it, the White Barn — 2,800 square feet, chandelier-lit, with arched openings to the marsh — hosts ceremonies and celebrations of every size, from weddings and reunions to corporate gatherings and holiday parties.</p>
             <p>Stacey and Clint pour their hearts into every event — our guests will tell you the same. When you tour Long Pond, you're not just booking a venue: you're gaining a family that will make sure your day is remembered by everyone who attends, for years to come.</p>
           </div>
         </div>

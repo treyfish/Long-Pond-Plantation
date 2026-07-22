@@ -21,7 +21,7 @@
     <section aria-label="Explore Long Pond" class="max-w-site mx-auto px-5 pb-[clamp(4rem,9vw,7.5rem)]">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
         <a href="weddings.html" class="tile tile-veil tile-tint aspect-[3/4]">
-          <img src="assets/img/couple-cross-arch.jpg" alt="Couple beneath the chapel cross arch" />
+          <img src="assets/img/couple-cross-arch.jpg" alt="Couple at the ceremony arbor beneath the oaks" />
           <span class="tile-bar">Weddings</span>
         </a>
         <a href="gallery.html" class="tile tile-veil tile-tint aspect-[3/4]">
