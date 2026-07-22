@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Preferred Vendors & FAQ | Long Pond Plantation</title>
+<meta name="description" content="Long Pond Plantation is a historic marsh-front wedding and event venue in Chiefland, Florida — open-air chapel, event barn, bridal suites, and Old-Florida live oaks." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          lp: {
+            white: '#FFFFFF', cream: '#F2EFED', linen: '#F8F6F4',
+            charcoal: '#282626', ink: '#2B2929', soft: '#5B5757',
+            sage: '#809A91', sagedeep: '#5C7268',
+            blush: '#EBC8BE', rose: '#DFA398', gold: '#C2A14A',
+          },
+        },
+        fontFamily: {
+          display: ['"Playfair Display"', 'serif'],
+          sans: ['Jost', 'Avenir', 'sans-serif'],
+          georgia: ['Georgia', 'serif'],
+          script: ['"Great Vibes"', 'cursive'],
+        },
+        letterSpacing: { hero: '0.22em', label: '0.32em', bodywide: '0.05em' },
+        boxShadow: {
+          card: '0 1px 2px rgba(40,38,38,0.06), 0 8px 24px rgba(128,154,145,0.14), 0 20px 48px rgba(40,38,38,0.10)',
+          float: '0 2px 4px rgba(40,38,38,0.08), 0 16px 40px rgba(128,154,145,0.20), 0 32px 80px rgba(40,38,38,0.14)',
+        },
+        maxWidth: { site: '1200px' },
+      },
+    },
+  };
+</script>
+<style type="text/tailwindcss">
+  @layer base {
+    html { scroll-behavior: smooth; }
+    body { @apply font-sans font-light text-lp-ink bg-lp-white antialiased; }
+  }
+  @layer components {
+    .btn-dark {
+      @apply inline-block bg-lp-charcoal text-lp-white font-sans font-light text-[13px] tracking-label uppercase px-10 py-4
+             transition-[transform,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]
+             hover:-translate-y-0.5 hover:opacity-90 active:translate-y-0 active:opacity-100
+             focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage;
+    }
+    .btn-ghost {
+      @apply inline-block border border-lp-charcoal text-lp-ink font-sans font-light text-[13px] tracking-label uppercase px-10 py-4
+             transition-[transform,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]
+             hover:-translate-y-0.5 hover:opacity-80 active:translate-y-0
+             focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage;
+    }
+    .h-serif   { @apply font-display uppercase tracking-hero text-lp-ink; }
+    .label-cap { @apply font-sans font-light uppercase tracking-label text-[12px] text-lp-soft; }
+    .nav-link  {
+      @apply font-sans font-light uppercase tracking-label text-[12px] text-lp-ink whitespace-nowrap
+             transition-opacity duration-300 hover:opacity-60 focus-visible:outline focus-visible:outline-2
+             focus-visible:outline-offset-4 focus-visible:outline-lp-sage;
+    }
+    .nav-link[aria-current="page"] { @apply text-lp-sage; }
+    .tile { @apply relative overflow-hidden block bg-lp-cream shadow-card focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage; }
+    .tile img { @apply w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]; }
+    .tile:hover img, .tile:focus-visible img { transform: scale(1.05); }
+    .tile-veil::after { content:''; @apply absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none; }
+    .tile-tint::before { content:''; @apply absolute inset-0 bg-lp-sage mix-blend-multiply opacity-20 pointer-events-none z-10; }
+    .tile-bar { @apply absolute bottom-0 left-0 w-full z-20 bg-white/95 px-8 py-3 font-display uppercase tracking-hero text-[13px] text-lp-ink text-center; }
+    .stars { @apply text-lp-gold text-[15px] tracking-[0.3em]; }
+    .grain::before {
+      content:''; position:absolute; inset:0; pointer-events:none; opacity:.04; z-index:1;
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+    .band-cream { @apply relative bg-lp-cream; background-image: radial-gradient(60% 80% at 20% 0%, rgba(128,154,145,0.07), transparent 60%), radial-gradient(50% 70% at 90% 100%, rgba(235,200,190,0.10), transparent 60%); }
+    .swash { @apply relative inline-block; }
+    .swash::before { content:''; position:absolute; inset:-18% -10%; z-index:-1; background: radial-gradient(55% 70% at 50% 55%, rgba(235,200,190,0.55), rgba(235,200,190,0.22) 60%, transparent 75%); filter: blur(2px); border-radius: 999px; }
+    @keyframes rise { from { opacity:0; transform: translateY(18px); } to { opacity:1; transform: translateY(0); } }
+    .rise { animation: rise .8s cubic-bezier(0.22,1,0.36,1) both; }
+    .rise-1 { animation-delay:.08s } .rise-2 { animation-delay:.2s } .rise-3 { animation-delay:.34s } .rise-4 { animation-delay:.5s }
+  }
+</style>
+</head>
+<body>
+
+  <header class="bg-lp-white pt-10 pb-0 text-center">
+    <!-- Swap this text lockup for the watercolor logo asset when brand_assets/ delivers it -->
+    <a href="index.html" class="inline-block focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage">
+      <span class="font-script text-5xl md:text-6xl text-lp-ink leading-none block">Long Pond Plantation</span>
+      <span class="label-cap mt-4 block">Weddings &nbsp;+&nbsp; Events &nbsp;·&nbsp; Chiefland, Florida</span>
+    </a>
+    <nav aria-label="Primary" class="mt-8 border-b border-lp-cream">
+      <ul class="flex flex-wrap justify-center gap-x-7 gap-y-2 px-4 pb-4 max-w-site mx-auto">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="weddings.html">Weddings</a></li>
+        <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li><a class="nav-link" href="packages.html">Packages</a></li>
+        <li><a class="nav-link" href="slate-and-pearl.html">Slate &amp; Pearl</a></li>
+        <li><a class="nav-link" href="grace-and-co.html">Grace &amp; Co.</a></li>
+        <li><a class="nav-link" href="woodys-coffee.html">Woodys Coffee</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ======= VENDORS ======= -->
+    <section class="text-center px-6 pt-[clamp(3rem,6vw,5rem)]">
+      <h1 class="font-script text-5xl md:text-6xl text-lp-sagedeep rise rise-1">Preferred Vendors</h1>
+      <p class="font-sans font-light text-[15px] tracking-bodywide leading-[1.8] max-w-2xl mx-auto mt-8">It truly takes a village. These are the talented people who pour their hearts into every wedding and celebration at Long Pond — y'all help bring the magic to life.</p>
+    </section>
+
+    <section class="px-6 py-[clamp(3rem,6vw,5rem)]">
+      <div class="max-w-site mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-lp-white border border-lp-cream shadow-card p-8 text-center space-y-3">
+          <p class="label-cap">Flowers &amp; Tuxedos</p>
+          <h2 class="font-display uppercase tracking-hero text-[14px] leading-relaxed">Alachua Flowers<br/>and Tuxedo Rentals</h2>
+        </div>
+        <div class="bg-lp-white border border-lp-cream shadow-card p-8 text-center space-y-3">
+          <p class="label-cap">DJ &amp; Entertainment</p>
+          <h2 class="font-display uppercase tracking-hero text-[14px] leading-relaxed">New Beginnings<br/>Entertainment</h2>
+        </div>
+        <div class="bg-lp-white border border-lp-cream shadow-card p-8 text-center space-y-3">
+          <p class="label-cap">Cakes</p>
+          <h2 class="font-display uppercase tracking-hero text-[14px] leading-relaxed">Toma Sue Davis</h2>
+        </div>
+        <div class="bg-lp-white border border-lp-cream shadow-card p-8 text-center space-y-3">
+          <p class="label-cap">Rentals &amp; Decor</p>
+          <h2 class="font-display uppercase tracking-hero text-[14px] leading-relaxed"><a href="slate-and-pearl.html" class="hover:opacity-60 transition-opacity duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lp-sage">Slate &amp; Pearl Events</a></h2>
+          <p class="font-sans font-light text-[13px] text-lp-soft">Our in-family design team</p>
+        </div>
+        <div class="bg-lp-white border border-lp-cream shadow-card p-8 text-center space-y-3">
+          <p class="label-cap">Photo &amp; Video</p>
+          <h2 class="font-display uppercase tracking-hero text-[14px] leading-relaxed">Maudie Lucas<br/>Photography</h2>
+        </div>
+        <div class="bg-lp-white border border-lp-cream shadow-card p-8 text-center space-y-3">
+          <p class="label-cap">Coffee</p>
+          <h2 class="font-display uppercase tracking-hero text-[14px] leading-relaxed"><a href="woodys-coffee.html" class="hover:opacity-60 transition-opacity duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lp-sage">Woodys Coffee Co.</a></h2>
+          <p class="font-sans font-light text-[13px] text-lp-soft">Right here on the property</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= FAQ ======= -->
+    <section class="band-cream grain px-6 py-[clamp(4rem,8vw,6.5rem)]">
+      <div class="max-w-2xl mx-auto relative z-10">
+        <h2 class="h-serif text-2xl md:text-3xl text-center">Frequently Asked Questions</h2>
+        <div class="w-16 h-px bg-lp-ink/40 mx-auto mt-6"></div>
+        <div class="mt-12 divide-y divide-lp-ink/15">
+
+          <details class="group py-5">
+            <summary class="cursor-pointer list-none flex items-center justify-between gap-4 font-display uppercase tracking-hero text-[13px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage">How do I schedule a tour?<span class="text-lp-sage transition-transform duration-300 group-open:rotate-45 text-lg leading-none">+</span></summary>
+            <p class="font-sans font-light text-[14px] leading-[1.8] mt-4">Use the <a href="contact.html" class="underline underline-offset-4 decoration-lp-sage">contact form</a> or email us — tell us your date (or best guess) and we'll set up a private walk of the grounds.</p>
+          </details>
+
+          <details class="group py-5">
+            <summary class="cursor-pointer list-none flex items-center justify-between gap-4 font-display uppercase tracking-hero text-[13px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage">Can we do everything on site?<span class="text-lp-sage transition-transform duration-300 group-open:rotate-45 text-lg leading-none">+</span></summary>
+            <p class="font-sans font-light text-[14px] leading-[1.8] mt-4">Yes — ceremony in the open-air chapel, reception in the event barn, and getting ready in the historic home's bridal and groom suites. One property, your whole day.</p>
+          </details>
+
+          <details class="group py-5">
+            <summary class="cursor-pointer list-none flex items-center justify-between gap-4 font-display uppercase tracking-hero text-[13px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage">Do you host events besides weddings?<span class="text-lp-sage transition-transform duration-300 group-open:rotate-45 text-lg leading-none">+</span></summary>
+            <p class="font-sans font-light text-[14px] leading-[1.8] mt-4">Absolutely — corporate events, reunions, showers and luncheons in the tea room, and holiday parties in the historic home.</p>
+          </details>
+
+          <details class="group py-5">
+            <summary class="cursor-pointer list-none flex items-center justify-between gap-4 font-display uppercase tracking-hero text-[13px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage">Do you offer decor and coordination?<span class="text-lp-sage transition-transform duration-300 group-open:rotate-45 text-lg leading-none">+</span></summary>
+            <p class="font-sans font-light text-[14px] leading-[1.8] mt-4">Yes — our in-family team at <a href="slate-and-pearl.html" class="underline underline-offset-4 decoration-lp-sage">Slate &amp; Pearl Events</a> handles wedding design, day-of coordination, and a curated rental collection.</p>
+          </details>
+
+          <details class="group py-5">
+            <summary class="cursor-pointer list-none flex items-center justify-between gap-4 font-display uppercase tracking-hero text-[13px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage">When is the best time for a sunset ceremony?<span class="text-lp-sage transition-transform duration-300 group-open:rotate-45 text-lg leading-none">+</span></summary>
+            <p class="font-sans font-light text-[14px] leading-[1.8] mt-4">Golden hour shifts with the season — in January, about 6:00 PM is just right, with the sun dipping low over the marsh. We'll help you time it perfectly for your date.</p>
+          </details>
+
+          <details class="group py-5">
+            <summary class="cursor-pointer list-none flex items-center justify-between gap-4 font-display uppercase tracking-hero text-[13px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage">Is catering available?<span class="text-lp-sage transition-transform duration-300 group-open:rotate-45 text-lg leading-none">+</span></summary>
+            <p class="font-sans font-light text-[14px] leading-[1.8] mt-4">Light catering is available upon request, and our kitchen supports outside caterers — ask us about options when you book your tour.</p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= CTA ======= -->
+    <section class="text-center px-6 py-[clamp(3.5rem,7vw,6rem)]">
+      <p class="font-script text-4xl md:text-5xl">still have questions?</p>
+      <div class="mt-8">
+        <a href="contact.html" class="btn-dark">Ask us anything</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-lp-cream">
+    <div class="max-w-site mx-auto px-6 py-14 grid md:grid-cols-3 gap-10 items-center">
+      <div class="flex items-center justify-center md:justify-start gap-5">
+        <span class="label-cap">Follow</span>
+        <a href="https://www.facebook.com/profile.php?id=61559171769389" class="w-9 h-9 rounded-full bg-lp-charcoal text-lp-white grid place-items-center text-[13px] font-sans transition-[transform,opacity] duration-300 hover:-translate-y-0.5 hover:opacity-80 active:translate-y-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage" aria-label="Long Pond Plantation on Facebook">f</a>
+        <a href="https://www.instagram.com/longpondplantationevents" class="w-9 h-9 rounded-full bg-lp-charcoal text-lp-white grid place-items-center text-[13px] font-sans transition-[transform,opacity] duration-300 hover:-translate-y-0.5 hover:opacity-80 active:translate-y-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage" aria-label="Long Pond Plantation on Instagram">ig</a>
+      </div>
+      <div class="flex justify-center gap-3">
+        <!-- MEDIA SLOT: footer gallery strip -->
+        <img src="https://placehold.co/220x220/809A91/F2EFED?text=barn" alt="" class="w-24 h-24 object-cover" />
+        <img src="https://placehold.co/220x220/5C7268/F2EFED?text=chapel" alt="" class="w-24 h-24 object-cover" />
+        <img src="https://placehold.co/220x220/2B2929/F2EFED?text=oaks" alt="" class="w-24 h-24 object-cover" />
+      </div>
+      <div class="text-center md:text-right space-y-1">
+        <p class="label-cap">(3XX) XXX-XXXX — pending</p>
+        <p class="font-sans font-light text-[14px] tracking-bodywide">Chiefland, Florida 32626</p>
+        <p class="font-sans font-light text-[14px] tracking-bodywide"><a href="mailto:longpondplantationevents@gmail.com" class="hover:opacity-60 transition-opacity duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lp-sage">longpondplantationevents@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="border-t border-lp-cream">
+      <div class="max-w-site mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-3">
+        <p class="label-cap">© 2026 Long Pond Plantation · Beauchamp Acres, LLC</p>
+        <p class="label-cap"><a href="vendors.html" class="hover:opacity-60 transition-opacity duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lp-sage">Preferred Vendors &amp; FAQ</a></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
