@@ -14,6 +14,7 @@
     <section class="px-6 py-[clamp(4rem,8vw,6.5rem)]">
       <div class="max-w-site mx-auto grid md:grid-cols-2 gap-12 items-center">
         <div class="space-y-6 order-2 md:order-1">
+          <img src="assets/img/sp-logo.jpg" alt="Slate &amp; Pearl Events monogram" class="h-24 md:h-28 w-auto -ml-2" />
           <p class="label-cap">Our story</p>
           <h2 class="font-script text-4xl md:text-5xl">It just came natural</h2>
           <div class="font-georgia text-[16px] leading-[1.9] text-justify space-y-5">
