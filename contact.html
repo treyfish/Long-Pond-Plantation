@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact | Long Pond Plantation | Chiefland, FL</title>
+<meta name="description" content="Long Pond Plantation is a historic marsh-front wedding and event venue in Chiefland, Florida — open-air chapel, event barn, bridal suites, and Old-Florida live oaks." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          lp: {
+            white: '#FFFFFF', cream: '#F2EFED', linen: '#F8F6F4',
+            charcoal: '#282626', ink: '#2B2929', soft: '#5B5757',
+            sage: '#809A91', sagedeep: '#5C7268',
+            blush: '#EBC8BE', rose: '#DFA398', gold: '#C2A14A',
+          },
+        },
+        fontFamily: {
+          display: ['"Playfair Display"', 'serif'],
+          sans: ['Jost', 'Avenir', 'sans-serif'],
+          georgia: ['Georgia', 'serif'],
+          script: ['"Great Vibes"', 'cursive'],
+        },
+        letterSpacing: { hero: '0.22em', label: '0.32em', bodywide: '0.05em' },
+        boxShadow: {
+          card: '0 1px 2px rgba(40,38,38,0.06), 0 8px 24px rgba(128,154,145,0.14), 0 20px 48px rgba(40,38,38,0.10)',
+          float: '0 2px 4px rgba(40,38,38,0.08), 0 16px 40px rgba(128,154,145,0.20), 0 32px 80px rgba(40,38,38,0.14)',
+        },
+        maxWidth: { site: '1200px' },
+      },
+    },
+  };
+</script>
+<style type="text/tailwindcss">
+  @layer base {
+    html { scroll-behavior: smooth; }
+    body { @apply font-sans font-light text-lp-ink bg-lp-white antialiased; }
+  }
+  @layer components {
+    .btn-dark {
+      @apply inline-block bg-lp-charcoal text-lp-white font-sans font-light text-[13px] tracking-label uppercase px-10 py-4
+             transition-[transform,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]
+             hover:-translate-y-0.5 hover:opacity-90 active:translate-y-0 active:opacity-100
+             focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage;
+    }
+    .btn-ghost {
+      @apply inline-block border border-lp-charcoal text-lp-ink font-sans font-light text-[13px] tracking-label uppercase px-10 py-4
+             transition-[transform,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]
+             hover:-translate-y-0.5 hover:opacity-80 active:translate-y-0
+             focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage;
+    }
+    .h-serif   { @apply font-display uppercase tracking-hero text-lp-ink; }
+    .label-cap { @apply font-sans font-light uppercase tracking-label text-[12px] text-lp-soft; }
+    .nav-link  {
+      @apply font-sans font-light uppercase tracking-label text-[12px] text-lp-ink whitespace-nowrap
+             transition-opacity duration-300 hover:opacity-60 focus-visible:outline focus-visible:outline-2
+             focus-visible:outline-offset-4 focus-visible:outline-lp-sage;
+    }
+    .nav-link[aria-current="page"] { @apply text-lp-sage; }
+    .tile { @apply relative overflow-hidden block bg-lp-cream shadow-card focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage; }
+    .tile img { @apply w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]; }
+    .tile:hover img, .tile:focus-visible img { transform: scale(1.05); }
+    .tile-veil::after { content:''; @apply absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none; }
+    .tile-tint::before { content:''; @apply absolute inset-0 bg-lp-sage mix-blend-multiply opacity-20 pointer-events-none z-10; }
+    .tile-bar { @apply absolute bottom-0 left-0 w-full z-20 bg-white/95 px-8 py-3 font-display uppercase tracking-hero text-[13px] text-lp-ink text-center; }
+    .stars { @apply text-lp-gold text-[15px] tracking-[0.3em]; }
+    .grain::before {
+      content:''; position:absolute; inset:0; pointer-events:none; opacity:.04; z-index:1;
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+    .band-cream { @apply relative bg-lp-cream; background-image: radial-gradient(60% 80% at 20% 0%, rgba(128,154,145,0.07), transparent 60%), radial-gradient(50% 70% at 90% 100%, rgba(235,200,190,0.10), transparent 60%); }
+    .swash { @apply relative inline-block; }
+    .swash::before { content:''; position:absolute; inset:-18% -10%; z-index:-1; background: radial-gradient(55% 70% at 50% 55%, rgba(235,200,190,0.55), rgba(235,200,190,0.22) 60%, transparent 75%); filter: blur(2px); border-radius: 999px; }
+    @keyframes rise { from { opacity:0; transform: translateY(18px); } to { opacity:1; transform: translateY(0); } }
+    .rise { animation: rise .8s cubic-bezier(0.22,1,0.36,1) both; }
+    .rise-1 { animation-delay:.08s } .rise-2 { animation-delay:.2s } .rise-3 { animation-delay:.34s } .rise-4 { animation-delay:.5s }
+  }
+</style>
+</head>
+<body>
+
+  <header class="bg-lp-white pt-10 pb-0 text-center">
+    <!-- Swap this text lockup for the watercolor logo asset when brand_assets/ delivers it -->
+    <a href="index.html" class="inline-block focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage">
+      <span class="font-script text-5xl md:text-6xl text-lp-ink leading-none block">Long Pond Plantation</span>
+      <span class="label-cap mt-4 block">Weddings &nbsp;+&nbsp; Events &nbsp;·&nbsp; Chiefland, Florida</span>
+    </a>
+    <nav aria-label="Primary" class="mt-8 border-b border-lp-cream">
+      <ul class="flex flex-wrap justify-center gap-x-7 gap-y-2 px-4 pb-4 max-w-site mx-auto">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="weddings.html">Weddings</a></li>
+        <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li><a class="nav-link" href="packages.html">Packages</a></li>
+        <li><a class="nav-link" href="slate-and-pearl.html">Slate &amp; Pearl</a></li>
+        <li><a class="nav-link" href="grace-and-co.html">Grace &amp; Co.</a></li>
+        <li><a class="nav-link" href="woodys-coffee.html">Woodys Coffee</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" aria-current="page" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ======= SAY HELLO (WM contact pattern, blush watercolor swash) ======= -->
+    <section class="text-center px-6 pt-[clamp(3rem,6vw,5rem)]">
+      <h1 class="swash rise rise-1"><span class="h-serif text-3xl md:text-4xl px-6 py-2 inline-block">Say Hello</span></h1>
+      <p class="font-sans font-light text-[15px] tracking-bodywide leading-[1.8] max-w-xl mx-auto mt-8">Tell us about your day and we'll be in touch to walk the grounds with you. There is still time to reserve your 2027 wedding date.</p>
+    </section>
+
+    <!-- ======= LEAD-QUALIFICATION FORM ======= -->
+    <!-- Form endpoint is a placeholder — see CLIENT-QUESTIONS.md (Formspree / serverless decision pending) -->
+    <section class="px-6 py-[clamp(3rem,6vw,5rem)]">
+      <form class="max-w-xl mx-auto space-y-7" action="#" method="post" onsubmit="event.preventDefault(); this.querySelector('[data-sent]').classList.remove('hidden');">
+
+        <div class="grid md:grid-cols-2 gap-7">
+          <div>
+            <label for="first-name" class="label-cap block mb-2">First name *</label>
+            <input id="first-name" name="first-name" type="text" required autocomplete="given-name" class="w-full border border-lp-ink/30 bg-lp-white px-4 py-3 font-sans font-light text-[15px] focus:border-lp-sage focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lp-sage" />
+          </div>
+          <div>
+            <label for="last-name" class="label-cap block mb-2">Last name *</label>
+            <input id="last-name" name="last-name" type="text" required autocomplete="family-name" class="w-full border border-lp-ink/30 bg-lp-white px-4 py-3 font-sans font-light text-[15px] focus:border-lp-sage focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lp-sage" />
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-7">
+          <div>
+            <label for="phone" class="label-cap block mb-2">Phone *</label>
+            <input id="phone" name="phone" type="tel" required autocomplete="tel" class="w-full border border-lp-ink/30 bg-lp-white px-4 py-3 font-sans font-light text-[15px] focus:border-lp-sage focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lp-sage" />
+          </div>
+          <div>
+            <label for="email" class="label-cap block mb-2">Email *</label>
+            <input id="email" name="email" type="email" required autocomplete="email" class="w-full border border-lp-ink/30 bg-lp-white px-4 py-3 font-sans font-light text-[15px] focus:border-lp-sage focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lp-sage" />
+          </div>
+        </div>
+
+        <fieldset>
+          <legend class="label-cap mb-3">Preferred method of contact *</legend>
+          <div class="flex gap-8">
+            <label class="flex items-center gap-2 font-sans font-light text-[15px]"><input type="radio" name="contact-method" value="phone" required class="accent-[#809A91]" /> phone</label>
+            <label class="flex items-center gap-2 font-sans font-light text-[15px]"><input type="radio" name="contact-method" value="email" class="accent-[#809A91]" /> email</label>
+          </div>
+        </fieldset>
+
+        <div class="grid md:grid-cols-2 gap-7">
+          <div>
+            <label for="event-type" class="label-cap block mb-2">Event type *</label>
+            <select id="event-type" name="event-type" required class="w-full border border-lp-ink/30 bg-lp-white px-4 py-3 font-sans font-light text-[15px] focus:border-lp-sage focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lp-sage">
+              <option value="">Select…</option>
+              <option>Wedding</option>
+              <option>Corporate event</option>
+              <option>Shower or luncheon</option>
+              <option>Reunion</option>
+              <option>Holiday party</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="tour-ready" class="label-cap block mb-2">Ready to schedule your private tour? *</label>
+            <select id="tour-ready" name="tour-ready" required class="w-full border border-lp-ink/30 bg-lp-white px-4 py-3 font-sans font-light text-[15px] focus:border-lp-sage focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lp-sage">
+              <option value="">Select…</option>
+              <option>Yes — let's pick a date!</option>
+              <option>Not yet, just gathering info</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label for="event-date" class="label-cap block mb-2">Event date (or best guess)</label>
+          <input id="event-date" name="event-date" type="date" class="w-full border border-lp-ink/30 bg-lp-white px-4 py-3 font-sans font-light text-[15px] focus:border-lp-sage focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lp-sage" />
+        </div>
+
+        <fieldset>
+          <legend class="label-cap mb-3">What made you decide to contact us today? (choose all that apply)</legend>
+          <div class="space-y-2">
+            <label class="flex items-center gap-3 font-sans font-light text-[15px]"><input type="checkbox" name="source" value="facebook" class="accent-[#809A91]" /> I saw a Facebook post or ad</label>
+            <label class="flex items-center gap-3 font-sans font-light text-[15px]"><input type="checkbox" name="source" value="instagram" class="accent-[#809A91]" /> I saw an Instagram post or ad</label>
+            <label class="flex items-center gap-3 font-sans font-light text-[15px]"><input type="checkbox" name="source" value="google" class="accent-[#809A91]" /> I found you on Google</label>
+            <label class="flex items-center gap-3 font-sans font-light text-[15px]"><input type="checkbox" name="source" value="recommended" class="accent-[#809A91]" /> Someone recommended Long Pond</label>
+            <label class="flex items-center gap-3 font-sans font-light text-[15px]"><input type="checkbox" name="source" value="attended" class="accent-[#809A91]" /> I attended an event at Long Pond</label>
+          </div>
+        </fieldset>
+
+        <div class="grid md:grid-cols-2 gap-7">
+          <div>
+            <label for="zip" class="label-cap block mb-2">Current zip code</label>
+            <input id="zip" name="zip" type="text" inputmode="numeric" autocomplete="postal-code" class="w-full border border-lp-ink/30 bg-lp-white px-4 py-3 font-sans font-light text-[15px] focus:border-lp-sage focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lp-sage" />
+          </div>
+          <div>
+            <label for="city" class="label-cap block mb-2">Current city</label>
+            <input id="city" name="city" type="text" autocomplete="address-level2" class="w-full border border-lp-ink/30 bg-lp-white px-4 py-3 font-sans font-light text-[15px] focus:border-lp-sage focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lp-sage" />
+          </div>
+        </div>
+
+        <div>
+          <label for="message" class="label-cap block mb-2">Message *</label>
+          <textarea id="message" name="message" rows="5" required class="w-full border border-lp-ink/30 bg-lp-white px-4 py-3 font-sans font-light text-[15px] focus:border-lp-sage focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lp-sage"></textarea>
+        </div>
+
+        <label class="flex items-start gap-3 font-sans font-light text-[13px] leading-[1.7] text-lp-soft">
+          <input type="checkbox" name="sms-consent" class="mt-1 accent-[#809A91]" />
+          I agree to receive text messages from Long Pond Plantation about pricing and event reminders. Message and data rates may apply. Reply STOP to opt out.
+        </label>
+
+        <button type="submit" class="w-full bg-lp-rose text-lp-white font-sans font-light text-[13px] tracking-label uppercase px-10 py-4 transition-[transform,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 hover:opacity-90 active:translate-y-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage">Submit</button>
+        <p data-sent class="hidden text-center label-cap text-lp-sagedeep">Thank you — we'll be in touch soon! (Demo only: form endpoint pending)</p>
+      </form>
+    </section>
+
+    <!-- ======= ADDRESS BLOCK ======= -->
+    <section class="band-cream grain px-6 py-[clamp(3.5rem,7vw,6rem)]">
+      <div class="max-w-site mx-auto grid md:grid-cols-2 gap-10 text-center relative z-10">
+        <div class="space-y-2">
+          <h2 class="h-serif text-lg">Long Pond Plantation</h2>
+          <p class="font-sans font-light text-[14px] tracking-bodywide leading-[1.7]">Chiefland, Florida 32626<br/><a href="mailto:longpondplantationevents@gmail.com" class="hover:opacity-60 transition-opacity duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lp-sage">longpondplantationevents@gmail.com</a></p>
+        </div>
+        <div class="space-y-2">
+          <h2 class="h-serif text-lg">Woodys Coffee Co.</h2>
+          <p class="font-sans font-light text-[14px] tracking-bodywide leading-[1.7]">On the Long Pond property · Chiefland, FL<br/><a href="woodys-coffee.html" class="hover:opacity-60 transition-opacity duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lp-sage">Hours &amp; menu</a></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-lp-cream">
+    <div class="max-w-site mx-auto px-6 py-14 grid md:grid-cols-3 gap-10 items-center">
+      <div class="flex items-center justify-center md:justify-start gap-5">
+        <span class="label-cap">Follow</span>
+        <a href="https://www.facebook.com/profile.php?id=61559171769389" class="w-9 h-9 rounded-full bg-lp-charcoal text-lp-white grid place-items-center text-[13px] font-sans transition-[transform,opacity] duration-300 hover:-translate-y-0.5 hover:opacity-80 active:translate-y-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage" aria-label="Long Pond Plantation on Facebook">f</a>
+        <a href="https://www.instagram.com/longpondplantationevents" class="w-9 h-9 rounded-full bg-lp-charcoal text-lp-white grid place-items-center text-[13px] font-sans transition-[transform,opacity] duration-300 hover:-translate-y-0.5 hover:opacity-80 active:translate-y-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage" aria-label="Long Pond Plantation on Instagram">ig</a>
+      </div>
+      <div class="flex justify-center gap-3">
+        <!-- MEDIA SLOT: footer gallery strip -->
+        <img src="https://placehold.co/220x220/809A91/F2EFED?text=barn" alt="" class="w-24 h-24 object-cover" />
+        <img src="https://placehold.co/220x220/5C7268/F2EFED?text=chapel" alt="" class="w-24 h-24 object-cover" />
+        <img src="https://placehold.co/220x220/2B2929/F2EFED?text=oaks" alt="" class="w-24 h-24 object-cover" />
+      </div>
+      <div class="text-center md:text-right space-y-1">
+        <p class="label-cap">(3XX) XXX-XXXX — pending</p>
+        <p class="font-sans font-light text-[14px] tracking-bodywide">Chiefland, Florida 32626</p>
+        <p class="font-sans font-light text-[14px] tracking-bodywide"><a href="mailto:longpondplantationevents@gmail.com" class="hover:opacity-60 transition-opacity duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lp-sage">longpondplantationevents@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="border-t border-lp-cream">
+      <div class="max-w-site mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-3">
+        <p class="label-cap">© 2026 Long Pond Plantation · Beauchamp Acres, LLC</p>
+        <p class="label-cap"><a href="vendors.html" class="hover:opacity-60 transition-opacity duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lp-sage">Preferred Vendors &amp; FAQ</a></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
