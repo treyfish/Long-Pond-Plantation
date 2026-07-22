@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Weddings | Long Pond Plantation | Chiefland, FL</title>
+<meta name="description" content="Long Pond Plantation is a historic marsh-front wedding and event venue in Chiefland, Florida — open-air chapel, event barn, bridal suites, and Old-Florida live oaks." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          lp: {
+            white: '#FFFFFF', cream: '#F2EFED', linen: '#F8F6F4',
+            charcoal: '#282626', ink: '#2B2929', soft: '#5B5757',
+            sage: '#809A91', sagedeep: '#5C7268',
+            blush: '#EBC8BE', rose: '#DFA398', gold: '#C2A14A',
+          },
+        },
+        fontFamily: {
+          display: ['"Playfair Display"', 'serif'],
+          sans: ['Jost', 'Avenir', 'sans-serif'],
+          georgia: ['Georgia', 'serif'],
+          script: ['"Great Vibes"', 'cursive'],
+        },
+        letterSpacing: { hero: '0.22em', label: '0.32em', bodywide: '0.05em' },
+        boxShadow: {
+          card: '0 1px 2px rgba(40,38,38,0.06), 0 8px 24px rgba(128,154,145,0.14), 0 20px 48px rgba(40,38,38,0.10)',
+          float: '0 2px 4px rgba(40,38,38,0.08), 0 16px 40px rgba(128,154,145,0.20), 0 32px 80px rgba(40,38,38,0.14)',
+        },
+        maxWidth: { site: '1200px' },
+      },
+    },
+  };
+</script>
+<style type="text/tailwindcss">
+  @layer base {
+    html { scroll-behavior: smooth; }
+    body { @apply font-sans font-light text-lp-ink bg-lp-white antialiased; }
+  }
+  @layer components {
+    .btn-dark {
+      @apply inline-block bg-lp-charcoal text-lp-white font-sans font-light text-[13px] tracking-label uppercase px-10 py-4
+             transition-[transform,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]
+             hover:-translate-y-0.5 hover:opacity-90 active:translate-y-0 active:opacity-100
+             focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage;
+    }
+    .btn-ghost {
+      @apply inline-block border border-lp-charcoal text-lp-ink font-sans font-light text-[13px] tracking-label uppercase px-10 py-4
+             transition-[transform,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]
+             hover:-translate-y-0.5 hover:opacity-80 active:translate-y-0
+             focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage;
+    }
+    .h-serif   { @apply font-display uppercase tracking-hero text-lp-ink; }
+    .label-cap { @apply font-sans font-light uppercase tracking-label text-[12px] text-lp-soft; }
+    .nav-link  {
+      @apply font-sans font-light uppercase tracking-label text-[12px] text-lp-ink whitespace-nowrap
+             transition-opacity duration-300 hover:opacity-60 focus-visible:outline focus-visible:outline-2
+             focus-visible:outline-offset-4 focus-visible:outline-lp-sage;
+    }
+    .nav-link[aria-current="page"] { @apply text-lp-sage; }
+    .tile { @apply relative overflow-hidden block bg-lp-cream shadow-card focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage; }
+    .tile img { @apply w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]; }
+    .tile:hover img, .tile:focus-visible img { transform: scale(1.05); }
+    .tile-veil::after { content:''; @apply absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none; }
+    .tile-tint::before { content:''; @apply absolute inset-0 bg-lp-sage mix-blend-multiply opacity-20 pointer-events-none z-10; }
+    .tile-bar { @apply absolute bottom-0 left-0 w-full z-20 bg-white/95 px-8 py-3 font-display uppercase tracking-hero text-[13px] text-lp-ink text-center; }
+    .stars { @apply text-lp-gold text-[15px] tracking-[0.3em]; }
+    .grain::before {
+      content:''; position:absolute; inset:0; pointer-events:none; opacity:.04; z-index:1;
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+    .band-cream { @apply relative bg-lp-cream; background-image: radial-gradient(60% 80% at 20% 0%, rgba(128,154,145,0.07), transparent 60%), radial-gradient(50% 70% at 90% 100%, rgba(235,200,190,0.10), transparent 60%); }
+    .swash { @apply relative inline-block; }
+    .swash::before { content:''; position:absolute; inset:-18% -10%; z-index:-1; background: radial-gradient(55% 70% at 50% 55%, rgba(235,200,190,0.55), rgba(235,200,190,0.22) 60%, transparent 75%); filter: blur(2px); border-radius: 999px; }
+    @keyframes rise { from { opacity:0; transform: translateY(18px); } to { opacity:1; transform: translateY(0); } }
+    .rise { animation: rise .8s cubic-bezier(0.22,1,0.36,1) both; }
+    .rise-1 { animation-delay:.08s } .rise-2 { animation-delay:.2s } .rise-3 { animation-delay:.34s } .rise-4 { animation-delay:.5s }
+  }
+</style>
+</head>
+<body>
+
+  <header class="bg-lp-white pt-10 pb-0 text-center">
+    <!-- Swap this text lockup for the watercolor logo asset when brand_assets/ delivers it -->
+    <a href="index.html" class="inline-block focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage">
+      <span class="font-script text-5xl md:text-6xl text-lp-ink leading-none block">Long Pond Plantation</span>
+      <span class="label-cap mt-4 block">Weddings &nbsp;+&nbsp; Events &nbsp;·&nbsp; Chiefland, Florida</span>
+    </a>
+    <nav aria-label="Primary" class="mt-8 border-b border-lp-cream">
+      <ul class="flex flex-wrap justify-center gap-x-7 gap-y-2 px-4 pb-4 max-w-site mx-auto">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" aria-current="page" href="weddings.html">Weddings</a></li>
+        <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li><a class="nav-link" href="packages.html">Packages</a></li>
+        <li><a class="nav-link" href="slate-and-pearl.html">Slate &amp; Pearl</a></li>
+        <li><a class="nav-link" href="grace-and-co.html">Grace &amp; Co.</a></li>
+        <li><a class="nav-link" href="woodys-coffee.html">Woodys Coffee</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ======= PAGE HERO: title over full-width photo ======= -->
+    <section class="relative h-[54vh] min-h-[380px] overflow-hidden">
+      <!-- MEDIA SLOT: wide exterior of the event barn under the oaks -->
+      <img src="https://placehold.co/1920x900/5C7268/F2EFED?text=EVENT+BARN+EXTERIOR+%E2%80%94+wide" alt="The Long Pond event barn beneath the live oaks" class="absolute inset-0 w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-black/20"></div>
+      <div class="absolute inset-0 bg-lp-sage mix-blend-multiply opacity-20"></div>
+      <h1 class="absolute inset-x-0 top-16 text-center font-display uppercase tracking-hero text-white text-2xl md:text-4xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.4)] rise rise-1">Long Pond Weddings</h1>
+    </section>
+
+    <!-- ======= POSITIONING LINE ======= -->
+    <section class="text-center px-6 pt-[clamp(3rem,6vw,5rem)] pb-[clamp(2rem,4vw,3.5rem)]">
+      <p class="font-display text-xl md:text-2xl leading-relaxed max-w-2xl mx-auto">Old-Florida marsh-front wedding venue where mossy live oaks meet timeless Southern elegance</p>
+    </section>
+
+    <!-- ======= AERIAL ======= -->
+    <section class="max-w-4xl mx-auto px-6">
+      <!-- MEDIA SLOT: Maudie Lucas aerial of chapel + ceremony lawn -->
+      <img src="https://placehold.co/1600x900/809A91/F2EFED?text=AERIAL+%E2%80%94+chapel+%2B+ceremony+lawn" alt="Aerial view of the chapel and ceremony lawn" class="w-full shadow-card" />
+    </section>
+
+    <!-- ======= WHERE IT ALL BEGAN ======= -->
+    <section class="text-center px-6 py-[clamp(3.5rem,7vw,6rem)]">
+      <h2 class="font-script text-4xl md:text-5xl">Where it all began</h2>
+      <p class="font-sans font-light text-[15px] tracking-bodywide leading-[1.8] max-w-2xl mx-auto mt-8">Set on a sixteen-acre marsh front in beautiful Levy County lies Long Pond Plantation, owned by Beauchamp Acres. Originally constructed in the early sixties, the unique three-thousand square-foot home holds an elite bridal &amp; groom suite, tea room, and kitchen — a photographer's dream. Beneath mature live oaks draped in Spanish moss, the event space rests in a perfect balance of shade and light, while sunsets melt the sky in pinks and yellows behind your ceremony.</p>
+    </section>
+
+    <!-- ======= WATERCOLOR ILLUSTRATION ======= -->
+    <section class="max-w-2xl mx-auto px-6 pb-[clamp(3.5rem,7vw,6rem)] text-center">
+      <!-- MEDIA SLOT: commissioned watercolor illustration of the venue (see CLIENT-QUESTIONS.md) -->
+      <img src="https://placehold.co/1200x800/F2EFED/809A91?text=WATERCOLOR+ILLUSTRATION+of+the+venue" alt="Watercolor illustration of Long Pond Plantation" class="w-full" />
+    </section>
+
+    <!-- ======= THE EXPERIENCE ======= -->
+    <section class="band-cream grain px-6 py-[clamp(3.5rem,7vw,6rem)]">
+      <div class="max-w-2xl mx-auto text-center relative z-10">
+        <h2 class="font-script text-4xl md:text-5xl">the experience</h2>
+        <p class="font-georgia text-[16px] leading-[1.8] text-justify mt-8">From the first walk beneath the oaks to the final sparkler send-off, our family hosts yours. Ceremony, reception, and getting ready all happen in one place — the open-air chapel with its chandelier, the 2,800 square-foot event barn, and the historic home's bridal and groom suites. Our team, alongside the design eye of Slate &amp; Pearl Events, tailors every detail so your day feels effortless, private, and unmistakably yours.</p>
+        <div class="mt-10">
+          <a href="packages.html" class="btn-dark">Click here for pricing guide</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= PROPERTY HIGHLIGHTS ======= -->
+    <section class="px-6 py-[clamp(4rem,9vw,7.5rem)]">
+      <h2 class="h-serif text-2xl md:text-3xl text-center">Property Highlights</h2>
+      <div class="w-16 h-px bg-lp-ink/40 mx-auto mt-6"></div>
+
+      <div class="max-w-site mx-auto space-y-16 mt-14">
+
+        <div>
+          <h3 class="label-cap text-center mb-6">The Event Barn</h3>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <img class="w-full md:col-span-2 md:row-span-2 aspect-square md:aspect-auto md:h-full object-cover shadow-card" src="https://placehold.co/700x700/5C7268/F2EFED?text=barn+%E2%80%94+chandelier" alt="Event barn chandelier and string lights" />
+            <img class="w-full aspect-square object-cover shadow-card" src="https://placehold.co/700x700/809A91/F2EFED?text=barn+%E2%80%94+long+tables" alt="Cross-back chairs at long farm tables" />
+            <img class="w-full aspect-square object-cover shadow-card" src="https://placehold.co/700x700/2B2929/F2EFED?text=barn+%E2%80%94+dance+floor" alt="Reception dance floor" />
+            <img class="w-full aspect-square object-cover shadow-card" src="https://placehold.co/700x700/5B5757/F2EFED?text=barn+%E2%80%94+sliding+doors" alt="Barn doors opening to the lawn" />
+            <img class="w-full aspect-square object-cover shadow-card" src="https://placehold.co/700x700/5B5757/F2EFED?text=detail+%E2%80%94+barn+%E2%80%94+sliding+doors" alt="Barn doors opening to the lawn" />
+          </div>
+        </div>
+
+        <div>
+          <h3 class="label-cap text-center mb-6">The Open-Air Chapel</h3>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <img class="w-full md:col-span-2 md:row-span-2 aspect-square md:aspect-auto md:h-full object-cover shadow-card" src="https://placehold.co/700x700/809A91/F2EFED?text=chapel+%E2%80%94+aisle" alt="Chapel aisle with chandelier" />
+            <img class="w-full aspect-square object-cover shadow-card" src="https://placehold.co/700x700/EBC8BE/2B2929?text=chapel+%E2%80%94+arches" alt="Chapel arched openings to the marsh" />
+            <img class="w-full aspect-square object-cover shadow-card" src="https://placehold.co/700x700/5C7268/F2EFED?text=chapel+%E2%80%94+ceremony" alt="Ceremony in progress" />
+            <img class="w-full aspect-square object-cover shadow-card" src="https://placehold.co/700x700/C2A14A/2B2929?text=chapel+%E2%80%94+golden+hour" alt="Chapel at golden hour" />
+            <img class="w-full aspect-square object-cover shadow-card" src="https://placehold.co/700x700/C2A14A/2B2929?text=detail+%E2%80%94+chapel+%E2%80%94+golden+hour" alt="Chapel at golden hour" />
+          </div>
+        </div>
+
+        <div>
+          <h3 class="label-cap text-center mb-6">The Bridal Suite</h3>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <img class="w-full md:col-span-2 md:row-span-2 aspect-square md:aspect-auto md:h-full object-cover shadow-card" src="https://placehold.co/700x700/EBC8BE/2B2929?text=bridal+suite+%E2%80%94+natural+light" alt="Bridal suite in natural light" />
+            <img class="w-full aspect-square object-cover shadow-card" src="https://placehold.co/700x700/DFA398/2B2929?text=bridal+suite+%E2%80%94+mirror" alt="Getting ready at the mirror" />
+            <img class="w-full aspect-square object-cover shadow-card" src="https://placehold.co/700x700/F2EFED/809A91?text=bridal+suite+%E2%80%94+details" alt="Dress and details" />
+            <img class="w-full aspect-square object-cover shadow-card" src="https://placehold.co/700x700/809A91/F2EFED?text=bridal+suite+%E2%80%94+party" alt="Bridal party" />
+            <img class="w-full aspect-square object-cover shadow-card" src="https://placehold.co/700x700/809A91/F2EFED?text=detail+%E2%80%94+bridal+suite+%E2%80%94+party" alt="Bridal party" />
+          </div>
+        </div>
+
+        <div>
+          <h3 class="label-cap text-center mb-6">The Groom Suite</h3>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <img class="w-full md:col-span-2 md:row-span-2 aspect-square md:aspect-auto md:h-full object-cover shadow-card" src="https://placehold.co/700x700/2B2929/F2EFED?text=groom+suite" alt="Groom suite" />
+            <img class="w-full aspect-square object-cover shadow-card" src="https://placehold.co/700x700/5B5757/F2EFED?text=groom+%E2%80%94+toast" alt="Groomsmen toast" />
+            <img class="w-full aspect-square object-cover shadow-card" src="https://placehold.co/700x700/77858B/F2EFED?text=groom+%E2%80%94+skeet+tradition" alt="Skeet shooting before the ceremony" />
+            <img class="w-full aspect-square object-cover shadow-card" src="https://placehold.co/700x700/5C7268/F2EFED?text=groom+%E2%80%94+boots" alt="Details" />
+            <img class="w-full aspect-square object-cover shadow-card" src="https://placehold.co/700x700/5C7268/F2EFED?text=detail+%E2%80%94+groom+%E2%80%94+boots" alt="Details" />
+          </div>
+        </div>
+
+        <div>
+          <h3 class="label-cap text-center mb-6">The Tea Room &amp; Historic Home</h3>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <img class="w-full md:col-span-2 md:row-span-2 aspect-square md:aspect-auto md:h-full object-cover shadow-card" src="https://placehold.co/700x700/F2EFED/5C7268?text=tea+room" alt="Tea room" />
+            <img class="w-full aspect-square object-cover shadow-card" src="https://placehold.co/700x700/C2A14A/2B2929?text=historic+home+%E2%80%94+exterior" alt="Historic 1960s home exterior" />
+            <img class="w-full aspect-square object-cover shadow-card" src="https://placehold.co/700x700/EBC8BE/2B2929?text=home+%E2%80%94+holiday+events" alt="Holiday event in the home" />
+            <img class="w-full aspect-square object-cover shadow-card" src="https://placehold.co/700x700/809A91/F2EFED?text=home+%E2%80%94+kitchen" alt="Kitchen" />
+            <img class="w-full aspect-square object-cover shadow-card" src="https://placehold.co/700x700/809A91/F2EFED?text=detail+%E2%80%94+home+%E2%80%94+kitchen" alt="Kitchen" />
+          </div>
+        </div>
+
+        <div>
+          <h3 class="label-cap text-center mb-6">The Marsh &amp; Sunset Lawn</h3>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <img class="w-full md:col-span-2 md:row-span-2 aspect-square md:aspect-auto md:h-full object-cover shadow-card" src="https://placehold.co/700x700/DFA398/2B2929?text=sunset+%E2%80%94+pinks+%26+yellows" alt="Sunset over the marsh" />
+            <img class="w-full aspect-square object-cover shadow-card" src="https://placehold.co/700x700/809A91/F2EFED?text=live+oaks+%2B+moss" alt="Live oaks with Spanish moss" />
+            <img class="w-full aspect-square object-cover shadow-card" src="https://placehold.co/700x700/5C7268/F2EFED?text=marsh+front" alt="The marsh front" />
+            <img class="w-full aspect-square object-cover shadow-card" src="https://placehold.co/700x700/2B2929/F2EFED?text=sparkler+send-off" alt="Sparkler send-off" />
+            <img class="w-full aspect-square object-cover shadow-card" src="https://placehold.co/700x700/2B2929/F2EFED?text=detail+%E2%80%94+sparkler+send-off" alt="Sparkler send-off" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======= CLOSING CTA ======= -->
+    <section class="band-cream grain text-center px-6 py-[clamp(3.5rem,7vw,6rem)]">
+      <p class="font-script text-4xl md:text-5xl relative z-10">What are you waiting for?</p>
+      <p class="label-cap mt-5 relative z-10">Reserve your 2027 wedding date — tours available now</p>
+      <div class="mt-8 relative z-10">
+        <a href="contact.html" class="btn-dark">Schedule a tour</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-lp-cream">
+    <div class="max-w-site mx-auto px-6 py-14 grid md:grid-cols-3 gap-10 items-center">
+      <div class="flex items-center justify-center md:justify-start gap-5">
+        <span class="label-cap">Follow</span>
+        <a href="https://www.facebook.com/profile.php?id=61559171769389" class="w-9 h-9 rounded-full bg-lp-charcoal text-lp-white grid place-items-center text-[13px] font-sans transition-[transform,opacity] duration-300 hover:-translate-y-0.5 hover:opacity-80 active:translate-y-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage" aria-label="Long Pond Plantation on Facebook">f</a>
+        <a href="https://www.instagram.com/longpondplantationevents" class="w-9 h-9 rounded-full bg-lp-charcoal text-lp-white grid place-items-center text-[13px] font-sans transition-[transform,opacity] duration-300 hover:-translate-y-0.5 hover:opacity-80 active:translate-y-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage" aria-label="Long Pond Plantation on Instagram">ig</a>
+      </div>
+      <div class="flex justify-center gap-3">
+        <!-- MEDIA SLOT: footer gallery strip -->
+        <img src="https://placehold.co/220x220/809A91/F2EFED?text=barn" alt="" class="w-24 h-24 object-cover" />
+        <img src="https://placehold.co/220x220/5C7268/F2EFED?text=chapel" alt="" class="w-24 h-24 object-cover" />
+        <img src="https://placehold.co/220x220/2B2929/F2EFED?text=oaks" alt="" class="w-24 h-24 object-cover" />
+      </div>
+      <div class="text-center md:text-right space-y-1">
+        <p class="label-cap">(3XX) XXX-XXXX — pending</p>
+        <p class="font-sans font-light text-[14px] tracking-bodywide">Chiefland, Florida 32626</p>
+        <p class="font-sans font-light text-[14px] tracking-bodywide"><a href="mailto:longpondplantationevents@gmail.com" class="hover:opacity-60 transition-opacity duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lp-sage">longpondplantationevents@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="border-t border-lp-cream">
+      <div class="max-w-site mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-3">
+        <p class="label-cap">© 2026 Long Pond Plantation · Beauchamp Acres, LLC</p>
+        <p class="label-cap"><a href="vendors.html" class="hover:opacity-60 transition-opacity duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lp-sage">Preferred Vendors &amp; FAQ</a></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

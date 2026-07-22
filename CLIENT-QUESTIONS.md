@@ -7,3 +7,4 @@
 - **Featured wedding permissions:** Gallery placeholders reference the Hiers wedding and Danielle & Blake (Maudie Lucas films) — need photographer + couple permission before real photos go up.
 - **Hero video:** Need the original Maudie Lucas 4:30 film (and ideally a 30–60s hero cut) — Facebook rip is too compressed for the homepage hero.
 - **Instagram handle:** Footer links to facebook.com/profile.php?id=61559171769389 and IG "longpondplantationevents" (seen on FB intro) — confirm IG URL.
+- **Watercolor venue illustration:** The White Magnolia weddings page features a commissioned watercolor of the venue — a placeholder slot exists on weddings.html. Does the client want one commissioned (their logo artist may be a fit)?
