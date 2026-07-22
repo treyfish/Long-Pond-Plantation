@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Slate & Pearl Events | Design, Coordinating & Rentals | Long Pond Plantation</title>
+<meta name="description" content="Long Pond Plantation is a historic marsh-front wedding and event venue in Chiefland, Florida — open-air chapel, event barn, bridal suites, and Old-Florida live oaks." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          lp: {
+            white: '#FFFFFF', cream: '#F2EFED', linen: '#F8F6F4',
+            charcoal: '#282626', ink: '#2B2929', soft: '#5B5757',
+            sage: '#809A91', sagedeep: '#5C7268',
+            blush: '#EBC8BE', rose: '#DFA398', gold: '#C2A14A',
+          },
+        },
+        fontFamily: {
+          display: ['"Playfair Display"', 'serif'],
+          sans: ['Jost', 'Avenir', 'sans-serif'],
+          georgia: ['Georgia', 'serif'],
+          script: ['"Great Vibes"', 'cursive'],
+        },
+        letterSpacing: { hero: '0.22em', label: '0.32em', bodywide: '0.05em' },
+        boxShadow: {
+          card: '0 1px 2px rgba(40,38,38,0.06), 0 8px 24px rgba(128,154,145,0.14), 0 20px 48px rgba(40,38,38,0.10)',
+          float: '0 2px 4px rgba(40,38,38,0.08), 0 16px 40px rgba(128,154,145,0.20), 0 32px 80px rgba(40,38,38,0.14)',
+        },
+        maxWidth: { site: '1200px' },
+      },
+    },
+  };
+</script>
+<style type="text/tailwindcss">
+  @layer base {
+    html { scroll-behavior: smooth; }
+    body { @apply font-sans font-light text-lp-ink bg-lp-white antialiased; }
+  }
+  @layer components {
+    .btn-dark {
+      @apply inline-block bg-lp-charcoal text-lp-white font-sans font-light text-[13px] tracking-label uppercase px-10 py-4
+             transition-[transform,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]
+             hover:-translate-y-0.5 hover:opacity-90 active:translate-y-0 active:opacity-100
+             focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage;
+    }
+    .btn-ghost {
+      @apply inline-block border border-lp-charcoal text-lp-ink font-sans font-light text-[13px] tracking-label uppercase px-10 py-4
+             transition-[transform,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]
+             hover:-translate-y-0.5 hover:opacity-80 active:translate-y-0
+             focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage;
+    }
+    .h-serif   { @apply font-display uppercase tracking-hero text-lp-ink; }
+    .label-cap { @apply font-sans font-light uppercase tracking-label text-[12px] text-lp-soft; }
+    .nav-link  {
+      @apply font-sans font-light uppercase tracking-label text-[12px] text-lp-ink whitespace-nowrap
+             transition-opacity duration-300 hover:opacity-60 focus-visible:outline focus-visible:outline-2
+             focus-visible:outline-offset-4 focus-visible:outline-lp-sage;
+    }
+    .nav-link[aria-current="page"] { @apply text-lp-sage; }
+    .tile { @apply relative overflow-hidden block bg-lp-cream shadow-card focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage; }
+    .tile img { @apply w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]; }
+    .tile:hover img, .tile:focus-visible img { transform: scale(1.05); }
+    .tile-veil::after { content:''; @apply absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none; }
+    .tile-tint::before { content:''; @apply absolute inset-0 bg-lp-sage mix-blend-multiply opacity-20 pointer-events-none z-10; }
+    .tile-bar { @apply absolute bottom-0 left-0 w-full z-20 bg-white/95 px-8 py-3 font-display uppercase tracking-hero text-[13px] text-lp-ink text-center; }
+    .stars { @apply text-lp-gold text-[15px] tracking-[0.3em]; }
+    .grain::before {
+      content:''; position:absolute; inset:0; pointer-events:none; opacity:.04; z-index:1;
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+    .band-cream { @apply relative bg-lp-cream; background-image: radial-gradient(60% 80% at 20% 0%, rgba(128,154,145,0.07), transparent 60%), radial-gradient(50% 70% at 90% 100%, rgba(235,200,190,0.10), transparent 60%); }
+    .swash { @apply relative inline-block; }
+    .swash::before { content:''; position:absolute; inset:-18% -10%; z-index:-1; background: radial-gradient(55% 70% at 50% 55%, rgba(235,200,190,0.55), rgba(235,200,190,0.22) 60%, transparent 75%); filter: blur(2px); border-radius: 999px; }
+    @keyframes rise { from { opacity:0; transform: translateY(18px); } to { opacity:1; transform: translateY(0); } }
+    .rise { animation: rise .8s cubic-bezier(0.22,1,0.36,1) both; }
+    .rise-1 { animation-delay:.08s } .rise-2 { animation-delay:.2s } .rise-3 { animation-delay:.34s } .rise-4 { animation-delay:.5s }
+  }
+</style>
+</head>
+<body>
+
+  <header class="bg-lp-white pt-10 pb-0 text-center">
+    <!-- Swap this text lockup for the watercolor logo asset when brand_assets/ delivers it -->
+    <a href="index.html" class="inline-block focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage">
+      <span class="font-script text-5xl md:text-6xl text-lp-ink leading-none block">Long Pond Plantation</span>
+      <span class="label-cap mt-4 block">Weddings &nbsp;+&nbsp; Events &nbsp;·&nbsp; Chiefland, Florida</span>
+    </a>
+    <nav aria-label="Primary" class="mt-8 border-b border-lp-cream">
+      <ul class="flex flex-wrap justify-center gap-x-7 gap-y-2 px-4 pb-4 max-w-site mx-auto">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="weddings.html">Weddings</a></li>
+        <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li><a class="nav-link" href="packages.html">Packages</a></li>
+        <li><a class="nav-link" aria-current="page" href="slate-and-pearl.html">Slate &amp; Pearl</a></li>
+        <li><a class="nav-link" href="grace-and-co.html">Grace &amp; Co.</a></li>
+        <li><a class="nav-link" href="woodys-coffee.html">Woodys Coffee</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ======= SP HERO ======= -->
+    <section class="relative h-[46vh] min-h-[340px] overflow-hidden">
+      <!-- MEDIA SLOT: styled tablescape with glassware + florals -->
+      <img src="https://placehold.co/1920x800/77858B/F2EFED?text=STYLED+TABLESCAPE+%E2%80%94+glassware+%2B+florals" alt="Styled tablescape by Slate and Pearl Events" class="absolute inset-0 w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-black/20"></div>
+      <div class="absolute inset-0 bg-lp-sage mix-blend-multiply opacity-20"></div>
+      <div class="absolute inset-x-0 top-14 text-center space-y-3 rise rise-1">
+        <h1 class="font-display uppercase tracking-hero text-white text-2xl md:text-4xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.4)]">Slate &amp; Pearl Events</h1>
+        <p class="font-sans font-light uppercase tracking-label text-[12px] text-white/90">Elegance. Refined.</p>
+      </div>
+    </section>
+
+    <!-- ======= OUR STORY ======= -->
+    <section class="px-6 py-[clamp(4rem,8vw,6.5rem)]">
+      <div class="max-w-site mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6 order-2 md:order-1">
+          <p class="label-cap">Our story</p>
+          <h2 class="font-script text-4xl md:text-5xl">It just came natural</h2>
+          <div class="font-georgia text-[16px] leading-[1.9] text-justify space-y-5">
+            <p>A true romantic at heart, our founder has spent twenty years bringing wedding dreams to life — from designing events in clients' homes to styling every celebration here at Long Pond. From the first planning chat to the final candle being lit, Slate &amp; Pearl designs beautiful spaces that tell each couple's unique love story.</p>
+            <p>Whether it's selecting the perfect florals, styling elegant tablescapes, or adding the thoughtful little details that make a day unforgettable, we pour our heart into every celebration.</p>
+          </div>
+          <a href="https://www.instagram.com/SlateandPearlEvents" class="btn-ghost">@SlateandPearlEvents</a>
+        </div>
+        <div class="relative overflow-hidden shadow-card order-1 md:order-2">
+          <!-- MEDIA SLOT: founder portrait -->
+          <img src="https://placehold.co/1080x1350/DFA398/2B2929?text=FOUNDER+PORTRAIT" alt="The Slate and Pearl founder" class="w-full object-cover" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= WHAT WE OFFER ======= -->
+    <section class="band-cream grain px-6 py-[clamp(4rem,8vw,6.5rem)]">
+      <div class="max-w-site mx-auto relative z-10">
+        <h2 class="h-serif text-2xl md:text-3xl text-center">What We Offer</h2>
+        <div class="w-16 h-px bg-lp-ink/40 mx-auto mt-6"></div>
+        <div class="grid md:grid-cols-3 gap-8 mt-12">
+          <div class="bg-lp-white shadow-card p-8 text-center space-y-4">
+            <div class="relative overflow-hidden aspect-[4/3]">
+              <img src="https://placehold.co/800x600/77858B/F2EFED?text=wedding+design" alt="Wedding design" class="w-full h-full object-cover" />
+            </div>
+            <h3 class="font-display uppercase tracking-hero text-[14px]">Wedding Design</h3>
+            <p class="font-sans font-light text-[14px] leading-[1.7]">Full design of your ceremony and reception — florals, tablescapes, and every thoughtful detail in between.</p>
+          </div>
+          <div class="bg-lp-white shadow-card p-8 text-center space-y-4">
+            <div class="relative overflow-hidden aspect-[4/3]">
+              <img src="https://placehold.co/800x600/809A91/F2EFED?text=coordinating" alt="Coordinating" class="w-full h-full object-cover" />
+            </div>
+            <h3 class="font-display uppercase tracking-hero text-[14px]">Coordinating</h3>
+            <p class="font-sans font-light text-[14px] leading-[1.7]">Day-of and full-service coordination so you can be a guest at your own celebration.</p>
+          </div>
+          <div class="bg-lp-white shadow-card p-8 text-center space-y-4">
+            <div class="relative overflow-hidden aspect-[4/3]">
+              <img src="https://placehold.co/800x600/5B5757/F2EFED?text=rentals+%2B+decor" alt="Rentals and decor" class="w-full h-full object-cover" />
+            </div>
+            <h3 class="font-display uppercase tracking-hero text-[14px]">Rentals &amp; Decor</h3>
+            <p class="font-sans font-light text-[14px] leading-[1.7]">A curated rental collection — linens, candles, signage, and statement pieces — styled for your day.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= CTA ======= -->
+    <section class="text-center px-6 py-[clamp(3.5rem,7vw,6rem)]">
+      <p class="font-script text-4xl md:text-5xl">let's design your day</p>
+      <p class="label-cap mt-5">In-family design for every Long Pond event — and beyond</p>
+      <div class="mt-8">
+        <a href="contact.html" class="btn-dark">Start the conversation</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-lp-cream">
+    <div class="max-w-site mx-auto px-6 py-14 grid md:grid-cols-3 gap-10 items-center">
+      <div class="flex items-center justify-center md:justify-start gap-5">
+        <span class="label-cap">Follow</span>
+        <a href="https://www.facebook.com/profile.php?id=61559171769389" class="w-9 h-9 rounded-full bg-lp-charcoal text-lp-white grid place-items-center text-[13px] font-sans transition-[transform,opacity] duration-300 hover:-translate-y-0.5 hover:opacity-80 active:translate-y-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage" aria-label="Long Pond Plantation on Facebook">f</a>
+        <a href="https://www.instagram.com/longpondplantationevents" class="w-9 h-9 rounded-full bg-lp-charcoal text-lp-white grid place-items-center text-[13px] font-sans transition-[transform,opacity] duration-300 hover:-translate-y-0.5 hover:opacity-80 active:translate-y-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage" aria-label="Long Pond Plantation on Instagram">ig</a>
+      </div>
+      <div class="flex justify-center gap-3">
+        <!-- MEDIA SLOT: footer gallery strip -->
+        <img src="https://placehold.co/220x220/809A91/F2EFED?text=barn" alt="" class="w-24 h-24 object-cover" />
+        <img src="https://placehold.co/220x220/5C7268/F2EFED?text=chapel" alt="" class="w-24 h-24 object-cover" />
+        <img src="https://placehold.co/220x220/2B2929/F2EFED?text=oaks" alt="" class="w-24 h-24 object-cover" />
+      </div>
+      <div class="text-center md:text-right space-y-1">
+        <p class="label-cap">(3XX) XXX-XXXX — pending</p>
+        <p class="font-sans font-light text-[14px] tracking-bodywide">Chiefland, Florida 32626</p>
+        <p class="font-sans font-light text-[14px] tracking-bodywide"><a href="mailto:longpondplantationevents@gmail.com" class="hover:opacity-60 transition-opacity duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lp-sage">longpondplantationevents@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="border-t border-lp-cream">
+      <div class="max-w-site mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-3">
+        <p class="label-cap">© 2026 Long Pond Plantation · Beauchamp Acres, LLC</p>
+        <p class="label-cap"><a href="vendors.html" class="hover:opacity-60 transition-opacity duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lp-sage">Preferred Vendors &amp; FAQ</a></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
