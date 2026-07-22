@@ -1,0 +1,67 @@
+/* ============================================================
+   LONG POND PLANTATION — DESIGN TOKENS (canonical reference)
+   Adapted from The White Magnolia design system (see PROJECT-BRIEF.md §7)
+   + Long Pond's watercolor logo palette (sage palms, blush roses, gold rings).
+   Pages are single-file HTML w/ Tailwind CDN — copy the shared <head> block
+   from _dev/head-template.html; this file documents the system.
+   ============================================================ */
+
+:root {
+  /* ---- Palette ---- */
+  --lp-white:    #FFFFFF;  /* page base */
+  --lp-cream:    #F2EFED;  /* warm beige section bands (WM testimonial band) */
+  --lp-linen:    #F8F6F4;  /* lighter beige, alternate band */
+  --lp-charcoal: #282626;  /* buttons, footer, dark bands */
+  --lp-ink:      #2B2929;  /* headings / body text */
+  --lp-ink-soft: #5B5757;  /* secondary text */
+  --lp-sage:     #809A91;  /* muted sage-gray accent (nav active, labels) */
+  --lp-sage-deep:#5C7268;  /* hover state of sage */
+  --lp-blush:    #EBC8BE;  /* watercolor swash accent */
+  --lp-rose:     #DFA398;  /* dusty-rose (contact submit) */
+  --lp-gold:     #C2A14A;  /* review stars, thin rules */
+
+  /* ---- Type ---- */
+  /* Display: "Playfair Display" — ALL-CAPS headings, wide tracking */
+  /* Sans:    "Jost" 300/400 — nav, labels, UI body (Brandon Grotesque stand-in) */
+  /* Serif:   Georgia — long-form editorial body (About) */
+  /* Script:  "Great Vibes" — emotional accent lines only, never UI */
+
+  /* ---- Tracking scale ---- */
+  --track-hero:  0.22em;  /* big serif caps H1/H2 */
+  --track-label: 0.32em;  /* small caps labels, tile bars, nav */
+  --track-body:  0.05em;  /* Jost body */
+
+  /* ---- Spacing rhythm (section scale) ---- */
+  --space-band: clamp(4rem, 9vw, 7.5rem);   /* vertical section padding */
+  --space-gap:  clamp(1rem, 2.5vw, 2rem);   /* grid gaps */
+
+  /* ---- Layered tinted shadows (never flat shadow-md) ---- */
+  --shadow-card:
+    0 1px 2px rgba(40,38,38,0.06),
+    0 8px 24px rgba(128,154,145,0.14),
+    0 20px 48px rgba(40,38,38,0.10);
+  --shadow-float:
+    0 2px 4px rgba(40,38,38,0.08),
+    0 16px 40px rgba(128,154,145,0.20),
+    0 32px 80px rgba(40,38,38,0.14);
+}
+
+/* ---- Surface layering system ----
+   base:     --lp-white / --lp-cream bands, no shadow
+   elevated: white card on cream, --shadow-card
+   floating: CTA panels & lightbox, --shadow-float
+*/
+
+/* ---- Image treatment recipe (every photo) ----
+   wrapper: relative overflow-hidden
+   layer 1: <img> object-cover
+   layer 2: gradient overlay  bg-gradient-to-t from-black/60 via-transparent
+   layer 3: color treatment   bg-[--lp-sage] mix-blend-multiply opacity-20
+   hover:   img scales 1.05 via transform, 700ms cubic-bezier(.2,.8,.2,1)
+*/
+
+/* ---- Motion rules ----
+   transform + opacity ONLY. No transition-all.
+   Spring-ish ease: cubic-bezier(0.22, 1, 0.36, 1), 500–700ms.
+   Page-load: staggered fade-up reveals on hero → heading → CTA.
+*/
