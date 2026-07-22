@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Long Pond Plantation | Weddings &amp; Events | Chiefland, FL</title>
+<meta name="description" content="Long Pond Plantation is a historic marsh-front wedding and event venue in Chiefland, Florida — open-air chapel, event barn, bridal suites, and Old-Florida live oaks." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          lp: {
+            white: '#FFFFFF', cream: '#F2EFED', linen: '#F8F6F4',
+            charcoal: '#282626', ink: '#2B2929', soft: '#5B5757',
+            sage: '#809A91', sagedeep: '#5C7268',
+            blush: '#EBC8BE', rose: '#DFA398', gold: '#C2A14A',
+          },
+        },
+        fontFamily: {
+          display: ['"Playfair Display"', 'serif'],
+          sans: ['Jost', 'Avenir', 'sans-serif'],
+          georgia: ['Georgia', 'serif'],
+          script: ['"Great Vibes"', 'cursive'],
+        },
+        letterSpacing: { hero: '0.22em', label: '0.32em', bodywide: '0.05em' },
+        boxShadow: {
+          card: '0 1px 2px rgba(40,38,38,0.06), 0 8px 24px rgba(128,154,145,0.14), 0 20px 48px rgba(40,38,38,0.10)',
+          float: '0 2px 4px rgba(40,38,38,0.08), 0 16px 40px rgba(128,154,145,0.20), 0 32px 80px rgba(40,38,38,0.14)',
+        },
+        maxWidth: { site: '1200px' },
+      },
+    },
+  };
+</script>
+<style type="text/tailwindcss">
+  @layer base {
+    html { scroll-behavior: smooth; }
+    body { @apply font-sans font-light text-lp-ink bg-lp-white antialiased; }
+  }
+  @layer components {
+    .btn-dark {
+      @apply inline-block bg-lp-charcoal text-lp-white font-sans font-light text-[13px] tracking-label uppercase px-10 py-4
+             transition-[transform,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]
+             hover:-translate-y-0.5 hover:opacity-90 active:translate-y-0 active:opacity-100
+             focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage;
+    }
+    .btn-ghost {
+      @apply inline-block border border-lp-charcoal text-lp-ink font-sans font-light text-[13px] tracking-label uppercase px-10 py-4
+             transition-[transform,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]
+             hover:-translate-y-0.5 hover:opacity-80 active:translate-y-0
+             focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage;
+    }
+    .h-serif   { @apply font-display uppercase tracking-hero text-lp-ink; }
+    .label-cap { @apply font-sans font-light uppercase tracking-label text-[12px] text-lp-soft; }
+    .nav-link  {
+      @apply font-sans font-light uppercase tracking-label text-[12px] text-lp-ink whitespace-nowrap
+             transition-opacity duration-300 hover:opacity-60 focus-visible:outline focus-visible:outline-2
+             focus-visible:outline-offset-4 focus-visible:outline-lp-sage;
+    }
+    .nav-link[aria-current="page"] { @apply text-lp-sage; }
+    .tile { @apply relative overflow-hidden block bg-lp-cream shadow-card focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage; }
+    .tile img { @apply w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]; }
+    .tile:hover img, .tile:focus-visible img { transform: scale(1.05); }
+    .tile-veil::after { content:''; @apply absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none; }
+    .tile-tint::before { content:''; @apply absolute inset-0 bg-lp-sage mix-blend-multiply opacity-20 pointer-events-none z-10; }
+    .tile-bar { @apply absolute bottom-0 left-0 w-full z-20 bg-white/95 px-8 py-3 font-display uppercase tracking-hero text-[13px] text-lp-ink text-center; }
+    .stars { @apply text-lp-gold text-[15px] tracking-[0.3em]; }
+    .grain::before {
+      content:''; position:absolute; inset:0; pointer-events:none; opacity:.04; z-index:1;
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+    .band-cream { @apply relative bg-lp-cream; background-image: radial-gradient(60% 80% at 20% 0%, rgba(128,154,145,0.07), transparent 60%), radial-gradient(50% 70% at 90% 100%, rgba(235,200,190,0.10), transparent 60%); }
+    .swash { @apply relative inline-block; }
+    .swash::before { content:''; position:absolute; inset:-18% -10%; z-index:-1; background: radial-gradient(55% 70% at 50% 55%, rgba(235,200,190,0.55), rgba(235,200,190,0.22) 60%, transparent 75%); filter: blur(2px); border-radius: 999px; }
+    @keyframes rise { from { opacity:0; transform: translateY(18px); } to { opacity:1; transform: translateY(0); } }
+    .rise { animation: rise .8s cubic-bezier(0.22,1,0.36,1) both; }
+    .rise-1 { animation-delay:.08s } .rise-2 { animation-delay:.2s } .rise-3 { animation-delay:.34s } .rise-4 { animation-delay:.5s }
+  }
+</style>
+</head>
+<body>
+
+  <!-- ======= HEADER (identical across pages; only aria-current moves) ======= -->
+  <header class="bg-lp-white pt-10 pb-0 text-center">
+    <!-- Swap this text lockup for the watercolor logo asset when brand_assets/ delivers it -->
+    <a href="index.html" class="inline-block focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage">
+      <span class="font-script text-5xl md:text-6xl text-lp-ink leading-none block">Long Pond Plantation</span>
+      <span class="label-cap mt-4 block">Weddings &nbsp;+&nbsp; Events &nbsp;·&nbsp; Chiefland, Florida</span>
+    </a>
+    <nav aria-label="Primary" class="mt-8 border-b border-lp-cream">
+      <ul class="flex flex-wrap justify-center gap-x-7 gap-y-2 px-4 pb-4 max-w-site mx-auto">
+        <li><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="weddings.html">Weddings</a></li>
+        <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li><a class="nav-link" href="packages.html">Packages</a></li>
+        <li><a class="nav-link" href="slate-and-pearl.html">Slate &amp; Pearl</a></li>
+        <li><a class="nav-link" href="grace-and-co.html">Grace &amp; Co.</a></li>
+        <li><a class="nav-link" href="woodys-coffee.html">Woodys Coffee</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ======= FULL-BLEED HERO ======= -->
+    <section class="relative h-[68vh] min-h-[420px] overflow-hidden grain">
+      <!-- MEDIA SLOT: hero video — Maudie Lucas drone film (poster frame until original file arrives) -->
+      <img src="https://placehold.co/1920x1080/282626/F2EFED?text=HERO+VIDEO+%E2%80%94+Maudie+Lucas+drone+film" alt="Aerial view over the Long Pond marsh at golden hour" class="absolute inset-0 w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/10"></div>
+      <div class="absolute inset-0 bg-lp-sage mix-blend-multiply opacity-20"></div>
+    </section>
+
+    <!-- ======= WELCOME ======= -->
+    <section class="text-center px-6 py-[clamp(4rem,9vw,7.5rem)]">
+      <h1 class="h-serif text-3xl md:text-[44px] leading-snug rise rise-1">Welcome to<br />Long Pond Plantation</h1>
+      <p class="font-georgia lowercase text-[15px] tracking-[0.45em] mt-7 text-lp-soft rise rise-2">your forever starts here</p>
+      <div class="mt-10 rise rise-3">
+        <a href="packages.html" class="btn-dark">Click here for pricing guide</a>
+      </div>
+    </section>
+
+    <!-- ======= TILE GRID (the layout the client loves) ======= -->
+    <section aria-label="Explore Long Pond" class="max-w-site mx-auto px-5 pb-[clamp(4rem,9vw,7.5rem)]">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+        <a href="weddings.html" class="tile tile-veil tile-tint aspect-[3/4]">
+          <img src="https://placehold.co/720x960/809A91/F2EFED?text=WEDDINGS+%E2%80%94+couple+at+the+chapel" alt="Couple at the open-air chapel" />
+          <span class="tile-bar">Weddings</span>
+        </a>
+        <a href="gallery.html" class="tile tile-veil tile-tint aspect-[3/4]">
+          <img src="https://placehold.co/720x960/5C7268/F2EFED?text=GALLERY+%E2%80%94+reception+barn" alt="Reception barn dressed for a wedding" />
+          <span class="tile-bar">Gallery</span>
+        </a>
+        <a href="packages.html" class="tile tile-veil tile-tint aspect-[3/4]">
+          <img src="https://placehold.co/720x960/2B2929/F2EFED?text=PACKAGES+%E2%80%94+table+setting" alt="Styled reception table setting" />
+          <span class="tile-bar">Packages</span>
+        </a>
+        <a href="slate-and-pearl.html" class="tile tile-veil tile-tint aspect-[3/4]">
+          <img src="https://placehold.co/720x960/77858B/F2EFED?text=SLATE+%26+PEARL+%E2%80%94+styled+decor" alt="Slate and Pearl styled event decor" />
+          <span class="tile-bar">Slate &amp; Pearl</span>
+        </a>
+        <a href="grace-and-co.html" class="tile tile-veil tile-tint aspect-[3/4]">
+          <img src="https://placehold.co/720x960/DFA398/2B2929?text=GRACE+%26+CO.+%E2%80%94+candles" alt="Grace and Co. soy candles" />
+          <span class="tile-bar">Grace &amp; Co.</span>
+        </a>
+        <a href="woodys-coffee.html" class="tile tile-veil tile-tint aspect-[3/4]">
+          <img src="https://placehold.co/720x960/5B5757/F2EFED?text=WOODYS+COFFEE+%E2%80%94+latte" alt="Woodys Coffee latte" />
+          <span class="tile-bar">Woodys Coffee</span>
+        </a>
+        <a href="about.html" class="tile tile-veil tile-tint aspect-[3/4]">
+          <img src="https://placehold.co/720x960/C2A14A/2B2929?text=ABOUT+%E2%80%94+the+Beauchamp+family" alt="The Beauchamp family" />
+          <span class="tile-bar">About</span>
+        </a>
+        <a href="contact.html" class="tile tile-veil tile-tint aspect-[3/4]">
+          <img src="https://placehold.co/720x960/EBC8BE/2B2929?text=CONTACT+%E2%80%94+sunset+lawn" alt="Sunset over the marsh lawn" />
+          <span class="tile-bar">Contact</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ======= TESTIMONIALS ======= -->
+    <section class="band-cream grain px-6 py-[clamp(4rem,9vw,7.5rem)]">
+      <h2 class="h-serif text-2xl md:text-3xl text-center relative z-10">What our guests are saying</h2>
+      <div class="w-16 h-px bg-lp-ink/40 mx-auto mt-6 relative z-10"></div>
+      <div class="max-w-site mx-auto mt-14 grid md:grid-cols-3 gap-12 relative z-10">
+        <figure class="text-center space-y-4">
+          <blockquote>
+            <p class="font-display uppercase tracking-hero text-[13px] leading-relaxed">"The best people, the best place"</p>
+            <p class="stars mt-4" aria-label="Five stars">★★★★★</p>
+            <p class="font-sans font-light text-[14px] leading-[1.7] mt-4">My wife and I celebrated our wedding at Long Pond Plantation, where Stacey and Clint truly shined. We fell in love with the breathtaking beauty of the venue. We wholeheartedly recommend it for any event you're planning.</p>
+          </blockquote>
+          <figcaption class="label-cap">— Michael</figcaption>
+        </figure>
+        <figure class="text-center space-y-4">
+          <blockquote>
+            <p class="font-display uppercase tracking-hero text-[13px] leading-relaxed">"A dream come true"</p>
+            <p class="stars mt-4" aria-label="Five stars">★★★★★</p>
+            <p class="font-sans font-light text-[14px] leading-[1.7] mt-4">From start to finish, Stacey and her family worked so hard to make a bride's vision come true — and it exceeded expectations! It has an elegant but rustic charm that would be perfect for any event. 10/10!</p>
+          </blockquote>
+          <figcaption class="label-cap">— Jessica Hiers</figcaption>
+        </figure>
+        <figure class="text-center space-y-4 opacity-70">
+          <blockquote>
+            <p class="font-display uppercase tracking-hero text-[13px] leading-relaxed">"Testimonial coming soon"</p>
+            <p class="stars mt-4" aria-label="Five stars">★★★★★</p>
+            <p class="font-sans font-light text-[14px] leading-[1.7] mt-4">Placeholder — third guest quote to be provided by the client (see CLIENT-QUESTIONS.md).</p>
+          </blockquote>
+          <figcaption class="label-cap">— Long Pond Guest</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ======= CTA STRIP ======= -->
+    <section class="text-center px-6 py-[clamp(3.5rem,7vw,6rem)]">
+      <p class="font-script text-4xl md:text-5xl">what are you waiting for?</p>
+      <p class="label-cap mt-5">There is still time to reserve your 2027 wedding date</p>
+      <div class="mt-8">
+        <a href="contact.html" class="btn-dark">Schedule a tour</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======= FOOTER (identical across pages) ======= -->
+  <footer class="border-t border-lp-cream">
+    <div class="max-w-site mx-auto px-6 py-14 grid md:grid-cols-3 gap-10 items-center">
+      <div class="flex items-center justify-center md:justify-start gap-5">
+        <span class="label-cap">Follow</span>
+        <a href="https://www.facebook.com/profile.php?id=61559171769389" class="w-9 h-9 rounded-full bg-lp-charcoal text-lp-white grid place-items-center text-[13px] font-sans transition-[transform,opacity] duration-300 hover:-translate-y-0.5 hover:opacity-80 active:translate-y-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage" aria-label="Long Pond Plantation on Facebook">f</a>
+        <a href="https://www.instagram.com/longpondplantationevents" class="w-9 h-9 rounded-full bg-lp-charcoal text-lp-white grid place-items-center text-[13px] font-sans transition-[transform,opacity] duration-300 hover:-translate-y-0.5 hover:opacity-80 active:translate-y-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage" aria-label="Long Pond Plantation on Instagram">ig</a>
+      </div>
+      <div class="flex justify-center gap-3">
+        <!-- MEDIA SLOT: footer gallery strip -->
+        <img src="https://placehold.co/220x220/809A91/F2EFED?text=barn" alt="" class="w-24 h-24 object-cover" />
+        <img src="https://placehold.co/220x220/5C7268/F2EFED?text=chapel" alt="" class="w-24 h-24 object-cover" />
+        <img src="https://placehold.co/220x220/2B2929/F2EFED?text=oaks" alt="" class="w-24 h-24 object-cover" />
+      </div>
+      <div class="text-center md:text-right space-y-1">
+        <p class="label-cap">(3XX) XXX-XXXX — pending</p>
+        <p class="font-sans font-light text-[14px] tracking-bodywide">Chiefland, Florida 32626</p>
+        <p class="font-sans font-light text-[14px] tracking-bodywide"><a href="mailto:longpondplantationevents@gmail.com" class="hover:opacity-60 transition-opacity duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lp-sage">longpondplantationevents@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="border-t border-lp-cream">
+      <div class="max-w-site mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-3">
+        <p class="label-cap">© 2026 Long Pond Plantation · Beauchamp Acres, LLC</p>
+        <p class="label-cap"><a href="vendors.html" class="hover:opacity-60 transition-opacity duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lp-sage">Preferred Vendors &amp; FAQ</a></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
