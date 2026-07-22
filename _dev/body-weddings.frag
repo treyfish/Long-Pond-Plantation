@@ -87,8 +87,8 @@
             <img class="w-full md:col-span-2 md:row-span-2 aspect-square md:aspect-auto md:h-full object-cover shadow-card" src="assets/img/groom-pool.jpg" alt="Groom at the pool table in the guys lounge" />
             <img class="w-full aspect-square object-cover shadow-card" src="assets/img/groom-bowtie.jpg" alt="Adjusting the bow tie" />
             <img class="w-full aspect-square object-cover shadow-card" src="assets/img/groom-suite-pool.jpg" alt="The guys lounge pool table" />
-            <img class="w-full aspect-square object-cover shadow-card" src="assets/img/lounge-couple-pool.jpg" alt="A game before the ceremony" />
-            <img class="w-full aspect-square object-cover shadow-card" src="assets/img/lounge-kiss-chair.jpg" alt="A quiet moment in the lounge" />
+            <img class="w-full aspect-square object-cover shadow-card" src="assets/img/lounge-groomsmen.jpg" alt="Groomsmen around the pool table" />
+            <img class="w-full aspect-square object-cover shadow-card" src="assets/img/firepit-lawn.jpg" alt="Fire pit lounge on the lawn" />
           </div>
         </div>
 
@@ -122,6 +122,6 @@
       <p class="font-script text-4xl md:text-5xl relative z-10">What are you waiting for?</p>
       <p class="label-cap mt-5 relative z-10">Reserve your 2027 wedding date — tours available now</p>
       <div class="mt-8 relative z-10">
-        <a href="contact.html" class="btn-dark">Schedule a tour</a>
+        <a href="https://book.squareup.com/appointments/yvodeqjpykfqr5/location/LNQT4940CN97Y/services" target="_blank" rel="noopener" class="btn-dark">Schedule a tour</a>
       </div>
     </section>

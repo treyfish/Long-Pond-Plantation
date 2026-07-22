@@ -47,6 +47,6 @@
       <p class="font-script text-4xl md:text-5xl relative z-10">come meet the family</p>
       <p class="label-cap mt-5 relative z-10">We would love for you to see it for yourself</p>
       <div class="mt-8 relative z-10">
-        <a href="contact.html" class="btn-dark">Book a tour</a>
+        <a href="https://book.squareup.com/appointments/yvodeqjpykfqr5/location/LNQT4940CN97Y/services" target="_blank" rel="noopener" class="btn-dark">Book a tour</a>
       </div>
     </section>

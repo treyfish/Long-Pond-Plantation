@@ -44,7 +44,7 @@
 
           <details class="group py-5">
             <summary class="cursor-pointer list-none flex items-center justify-between gap-4 font-display uppercase tracking-hero text-[13px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage">How do I schedule a tour?<span class="text-lp-sage transition-transform duration-300 group-open:rotate-45 text-lg leading-none">+</span></summary>
-            <p class="font-sans font-light text-[14px] leading-[1.8] mt-4">Use the <a href="contact.html" class="underline underline-offset-4 decoration-lp-sage">contact form</a> or email us — tell us your date (or best guess) and we'll set up a private walk of the grounds.</p>
+            <p class="font-sans font-light text-[14px] leading-[1.8] mt-4"><a href="https://book.squareup.com/appointments/yvodeqjpykfqr5/location/LNQT4940CN97Y/services" target="_blank" rel="noopener" class="underline underline-offset-4 decoration-lp-sage">Book instantly through Square</a>, or use the <a href="contact.html" class="underline underline-offset-4 decoration-lp-sage">contact form</a> — tell us your date and we'll set up a private walk of the grounds.</p>
           </details>
 
           <details class="group py-5">

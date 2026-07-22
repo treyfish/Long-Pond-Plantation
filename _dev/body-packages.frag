@@ -81,7 +81,7 @@
 
       </div>
       <div class="text-center mt-12">
-        <a href="contact.html" class="btn-dark">Schedule a tour</a>
+        <a href="https://book.squareup.com/appointments/yvodeqjpykfqr5/location/LNQT4940CN97Y/services" target="_blank" rel="noopener" class="btn-dark">Schedule a tour</a>
       </div>
     </section>
 
@@ -105,6 +105,6 @@
       <p class="font-script text-4xl md:text-5xl">let's start planning</p>
       <p class="label-cap mt-5">Reserve your 2027 wedding date today</p>
       <div class="mt-8">
-        <a href="contact.html" class="btn-dark">Book a tour</a>
+        <a href="https://book.squareup.com/appointments/yvodeqjpykfqr5/location/LNQT4940CN97Y/services" target="_blank" rel="noopener" class="btn-dark">Book a tour</a>
       </div>
     </section>

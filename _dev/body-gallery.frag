@@ -112,6 +112,6 @@
       <p class="font-script text-4xl md:text-5xl">come see it in person</p>
       <p class="label-cap mt-5">Words don't do justice to how beautiful it is here</p>
       <div class="mt-8">
-        <a href="contact.html" class="btn-dark">Book a tour</a>
+        <a href="https://book.squareup.com/appointments/yvodeqjpykfqr5/location/LNQT4940CN97Y/services" target="_blank" rel="noopener" class="btn-dark">Book a tour</a>
       </div>
     </section>

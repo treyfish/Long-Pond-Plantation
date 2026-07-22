@@ -53,11 +53,37 @@
       </div>
     </section>
 
+
+    <!-- ======= THE COFFEE MENU (from the client's Wix menu) ======= -->
+    <section class="px-6 py-[clamp(4rem,8vw,6.5rem)]">
+      <div class="max-w-3xl mx-auto border border-lp-charcoal/40 bg-lp-white shadow-card p-8 md:p-12">
+        <h2 class="h-serif text-xl md:text-2xl text-center">Coffee Menu</h2>
+        <div class="w-12 h-px bg-lp-gold mx-auto mt-5"></div>
+        <p class="label-cap text-center mt-6">Served daily 8:00am – 1:00pm · Cold foam included</p>
+        <div class="grid md:grid-cols-2 gap-x-12 divide-y md:divide-y-0 divide-lp-cream mt-8">
+            <div class="py-4"><p class="font-display uppercase tracking-hero text-[13px]">White Barn</p><p class="font-sans font-light text-[13px] text-lp-soft mt-1">Creamy white chocolate &amp; caramel</p></div>
+            <div class="py-4"><p class="font-display uppercase tracking-hero text-[13px]">Plantation Fog</p><p class="font-sans font-light text-[13px] text-lp-soft mt-1">Honey, vanilla &amp; a splash of cinnamon</p></div>
+            <div class="py-4"><p class="font-display uppercase tracking-hero text-[13px]">Tuxedo</p><p class="font-sans font-light text-[13px] text-lp-soft mt-1">Rich mocha with caramel drizzle</p></div>
+            <div class="py-4"><p class="font-display uppercase tracking-hero text-[13px]">Pondview Mocha</p><p class="font-sans font-light text-[13px] text-lp-soft mt-1">Chocolate, hazelnut &amp; cream</p></div>
+            <div class="py-4"><p class="font-display uppercase tracking-hero text-[13px]">Oak Canopy</p><p class="font-sans font-light text-[13px] text-lp-soft mt-1">Brown sugar cinnamon &amp; cream</p></div>
+            <div class="py-4"><p class="font-display uppercase tracking-hero text-[13px]">First Toast</p><p class="font-sans font-light text-[13px] text-lp-soft mt-1">Toasted marshmallow &amp; vanilla</p></div>
+            <div class="py-4"><p class="font-display uppercase tracking-hero text-[13px]">Sweet I Do</p><p class="font-sans font-light text-[13px] text-lp-soft mt-1">Caramel &amp; vanilla</p></div>
+            <div class="py-4"><p class="font-display uppercase tracking-hero text-[13px]">Shotgun Breve</p><p class="font-sans font-light text-[13px] text-lp-soft mt-1">Extra creamy vanilla breve</p></div>
+            <div class="py-4"><p class="font-display uppercase tracking-hero text-[13px]">Blushing Bride</p><p class="font-sans font-light text-[13px] text-lp-soft mt-1">Lavender, honey &amp; vanilla</p></div>
+            <div class="py-4"><p class="font-display uppercase tracking-hero text-[13px]">Honeymoon Glow</p><p class="font-sans font-light text-[13px] text-lp-soft mt-1">Caramel, chocolate &amp; praline</p></div>
+        </div>
+        <div class="border-t border-lp-cream mt-8 pt-6 text-center">
+          <p class="font-sans font-light text-[14px] tracking-bodywide">Hot 12oz <span class="font-display">$6</span> &nbsp;·&nbsp; Iced 20oz <span class="font-display">$7</span> &nbsp;·&nbsp; Blended 24oz <span class="font-display">$8</span> &nbsp;·&nbsp; Bottled <span class="font-display">$5</span></p>
+          <p class="font-sans font-light text-[14px] tracking-bodywide mt-4">Small Bites — <span class="font-display uppercase tracking-hero text-[12px]">Croffles</span> topped with honey: pumpkin, cinnamon, whipped, or chocolate — <span class="font-display">$3.50</span></p>
+        </div>
+      </div>
+    </section>
+
     <!-- ======= HOURS & LOCATION ======= -->
     <section class="px-6 py-[clamp(3.5rem,7vw,6rem)]">
       <div class="max-w-2xl mx-auto text-center space-y-6">
         <h2 class="h-serif text-xl md:text-2xl">Hours &amp; Location</h2>
-        <p class="font-sans font-light text-[15px] tracking-bodywide leading-[1.8]">Woodys keeps limited hours around wedding season — when the venue is running full speed, the coffee bar rests. Check our Facebook page for this week's schedule before you drive out.</p>
+        <p class="font-sans font-light text-[15px] tracking-bodywide leading-[1.8]">The coffee menu is served daily from 8:00am to 1:00pm — but during peak wedding season the bar sometimes rests, so check our Facebook page for this week's schedule before you drive out.</p>
         <p class="font-sans font-light text-[15px] tracking-bodywide leading-[1.8]">Find us on the Long Pond Plantation property, Chiefland, Florida.</p>
         <a href="https://www.facebook.com/p/Woodyscoffeeco-61569357114199/" class="btn-dark">This week's hours on Facebook</a>
       </div>

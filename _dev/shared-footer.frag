@@ -20,7 +20,7 @@
     <div class="border-t border-lp-cream">
       <div class="max-w-site mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-3">
         <p class="label-cap">© 2026 Long Pond Plantation · Beauchamp Acres, LLC</p>
-        <p class="label-cap"><a href="vendors.html" class="hover:opacity-60 transition-opacity duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lp-sage">Preferred Vendors &amp; FAQ</a></p>
+        <p class="label-cap"><a href="vendors.html" class="hover:opacity-60 transition-opacity duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lp-sage">Preferred Vendors &amp; FAQ</a> &nbsp;·&nbsp; <a href="blog.html" class="hover:opacity-60 transition-opacity duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lp-sage">Blog</a></p>
       </div>
     </div>
   </footer>

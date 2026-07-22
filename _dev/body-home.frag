@@ -92,7 +92,7 @@
       <p class="font-script text-4xl md:text-5xl">what are you waiting for?</p>
       <p class="label-cap mt-5">There is still time to reserve your 2027 wedding date</p>
       <div class="mt-8">
-        <a href="contact.html" class="btn-dark">Schedule a tour</a>
+        <a href="https://book.squareup.com/appointments/yvodeqjpykfqr5/location/LNQT4940CN97Y/services" target="_blank" rel="noopener" class="btn-dark">Schedule a tour</a>
       </div>
     </section>
 

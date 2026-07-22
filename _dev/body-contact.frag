@@ -2,6 +2,10 @@
     <section class="text-center px-6 pt-[clamp(3rem,6vw,5rem)]">
       <h1 class="swash rise rise-1"><span class="h-serif text-3xl md:text-4xl px-6 py-2 inline-block">Say Hello</span></h1>
       <p class="font-sans font-light text-[15px] tracking-bodywide leading-[1.8] max-w-xl mx-auto mt-8">Tell us about your day and we'll be in touch to walk the grounds with you. There is still time to reserve your 2027 wedding date.</p>
+      <div class="mt-8">
+        <a href="https://book.squareup.com/appointments/yvodeqjpykfqr5/location/LNQT4940CN97Y/services" target="_blank" rel="noopener" class="btn-dark">Book your tour instantly</a>
+        <p class="label-cap mt-4">Tours, bookings &amp; payments are handled securely through Square</p>
+      </div>
     </section>
 
     <!-- ======= LEAD-QUALIFICATION FORM ======= -->

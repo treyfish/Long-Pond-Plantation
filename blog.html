@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Blog | Long Pond Plantation | Chiefland, FL</title>
+<meta name="description" content="Long Pond Plantation is a historic marsh-front wedding and event venue in Chiefland, Florida — the chandelier-lit White Barn, bridal suite, guys lounge, and Old-Florida live oaks." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          lp: {
+            white: '#FFFFFF', cream: '#F2EFED', linen: '#F8F6F4',
+            charcoal: '#282626', ink: '#2B2929', soft: '#5B5757',
+            sage: '#809A91', sagedeep: '#5C7268',
+            blush: '#EBC8BE', rose: '#DFA398', gold: '#C2A14A',
+          },
+        },
+        fontFamily: {
+          display: ['"Playfair Display"', 'serif'],
+          sans: ['Jost', 'Avenir', 'sans-serif'],
+          georgia: ['Georgia', 'serif'],
+          script: ['"Great Vibes"', 'cursive'],
+        },
+        letterSpacing: { hero: '0.22em', label: '0.32em', bodywide: '0.05em' },
+        boxShadow: {
+          card: '0 1px 2px rgba(40,38,38,0.06), 0 8px 24px rgba(128,154,145,0.14), 0 20px 48px rgba(40,38,38,0.10)',
+          float: '0 2px 4px rgba(40,38,38,0.08), 0 16px 40px rgba(128,154,145,0.20), 0 32px 80px rgba(40,38,38,0.14)',
+        },
+        maxWidth: { site: '1200px' },
+      },
+    },
+  };
+</script>
+<style type="text/tailwindcss">
+  @layer base {
+    html { scroll-behavior: smooth; }
+    body { @apply font-sans font-light text-lp-ink bg-lp-white antialiased; }
+  }
+  @layer components {
+    .btn-dark {
+      @apply inline-block bg-lp-charcoal text-lp-white font-sans font-light text-[13px] tracking-label uppercase px-10 py-4
+             transition-[transform,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]
+             hover:-translate-y-0.5 hover:opacity-90 active:translate-y-0 active:opacity-100
+             focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage;
+    }
+    .btn-ghost {
+      @apply inline-block border border-lp-charcoal text-lp-ink font-sans font-light text-[13px] tracking-label uppercase px-10 py-4
+             transition-[transform,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]
+             hover:-translate-y-0.5 hover:opacity-80 active:translate-y-0
+             focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage;
+    }
+    .h-serif   { @apply font-display uppercase tracking-hero text-lp-ink; }
+    .label-cap { @apply font-sans font-light uppercase tracking-label text-[12px] text-lp-soft; }
+    .nav-link  {
+      @apply font-sans font-light uppercase tracking-label text-[12px] text-lp-ink whitespace-nowrap
+             transition-opacity duration-300 hover:opacity-60 focus-visible:outline focus-visible:outline-2
+             focus-visible:outline-offset-4 focus-visible:outline-lp-sage;
+    }
+    .nav-link[aria-current="page"] { @apply text-lp-sage; }
+    .tile { @apply relative overflow-hidden block bg-lp-cream shadow-card focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage; }
+    .tile img { @apply w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]; }
+    .tile:hover img, .tile:focus-visible img { transform: scale(1.05); }
+    .tile-veil::after { content:''; @apply absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none; }
+    .tile-tint::before { content:''; @apply absolute inset-0 bg-lp-sage mix-blend-multiply opacity-20 pointer-events-none z-10; }
+    .tile-bar { @apply absolute bottom-0 left-0 w-full z-20 bg-white/95 px-8 py-3 font-display uppercase tracking-hero text-[13px] text-lp-ink text-center; }
+    .stars { @apply text-lp-gold text-[15px] tracking-[0.3em]; }
+    .grain::before {
+      content:''; position:absolute; inset:0; pointer-events:none; opacity:.04; z-index:1;
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+    .band-cream { @apply relative bg-lp-cream; background-image: radial-gradient(60% 80% at 20% 0%, rgba(128,154,145,0.07), transparent 60%), radial-gradient(50% 70% at 90% 100%, rgba(235,200,190,0.10), transparent 60%); }
+    .swash { @apply relative inline-block; }
+    .swash::before { content:''; position:absolute; inset:-18% -10%; z-index:-1; background: radial-gradient(55% 70% at 50% 55%, rgba(235,200,190,0.55), rgba(235,200,190,0.22) 60%, transparent 75%); filter: blur(2px); border-radius: 999px; }
+    @keyframes rise { from { opacity:0; transform: translateY(18px); } to { opacity:1; transform: translateY(0); } }
+    .rise { animation: rise .8s cubic-bezier(0.22,1,0.36,1) both; }
+    .rise-1 { animation-delay:.08s } .rise-2 { animation-delay:.2s } .rise-3 { animation-delay:.34s } .rise-4 { animation-delay:.5s }
+  }
+</style>
+</head>
+<body>
+
+  <header class="bg-lp-white pt-10 pb-0 text-center">
+    <!-- Swap this text lockup for the watercolor logo asset when brand_assets/ delivers it -->
+    <a href="index.html" class="inline-block focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage">
+      <img src="assets/img/logo-watercolor.jpg" alt="Long Pond Plantation — Weddings &amp; Events" class="h-36 md:h-44 w-auto mx-auto" />
+      <span class="label-cap mt-3 block">Chiefland, Florida</span>
+    </a>
+    <nav aria-label="Primary" class="mt-8 border-b border-lp-cream">
+      <ul class="flex flex-wrap justify-center gap-x-7 gap-y-2 px-4 pb-4 max-w-site mx-auto">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="weddings.html">Weddings</a></li>
+        <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li><a class="nav-link" href="packages.html">Packages</a></li>
+        <li><a class="nav-link" href="slate-and-pearl.html">Slate &amp; Pearl</a></li>
+        <li><a class="nav-link" href="grace-and-co.html">Grace &amp; Co.</a></li>
+        <li><a class="nav-link" href="woodys-coffee.html">Woodys Coffee</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ======= BLOG (posts currently hosted on the existing Wix blog — migrate at cutover) ======= -->
+    <section class="text-center px-6 pt-[clamp(3rem,6vw,5rem)]">
+      <h1 class="font-script text-5xl md:text-6xl text-lp-sagedeep rise rise-1">The Journal</h1>
+      <p class="font-sans font-light text-[15px] tracking-bodywide leading-[1.8] max-w-2xl mx-auto mt-8">Planning tips, trends, and Old-Florida inspiration from the Long Pond family.</p>
+    </section>
+    <section class="px-6 py-[clamp(3rem,6vw,5rem)]">
+      <div class="max-w-site mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <a href="https://www.longpondplantationevents.com/post/top-wedding-cake-trends-you-need-to-know-for-your-big-day" target="_blank" rel="noopener" class="block bg-lp-white border border-lp-cream shadow-card p-8 space-y-3 transition-[transform,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage">
+          <p class="label-cap">From the journal</p>
+          <h2 class="font-display text-[17px] leading-snug">Top Wedding Cake Trends you Need to Know for your Big Day</h2>
+          <p class="label-cap text-lp-sage">Read the post →</p>
+        </a>
+        <a href="https://www.longpondplantationevents.com/post/essential-tips-for-hiring-the-best-wedding-vendors-for-your-big-day" target="_blank" rel="noopener" class="block bg-lp-white border border-lp-cream shadow-card p-8 space-y-3 transition-[transform,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage">
+          <p class="label-cap">From the journal</p>
+          <h2 class="font-display text-[17px] leading-snug">Essential Tips for Hiring the Best Wedding Vendors for your Big Day</h2>
+          <p class="label-cap text-lp-sage">Read the post →</p>
+        </a>
+        <a href="https://www.longpondplantationevents.com/post/top-3-essential-factors-to-consider-when-choosing-a-wedding-venue" target="_blank" rel="noopener" class="block bg-lp-white border border-lp-cream shadow-card p-8 space-y-3 transition-[transform,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage">
+          <p class="label-cap">From the journal</p>
+          <h2 class="font-display text-[17px] leading-snug">Top 3 Essential Factors to Consider when Choosing a Wedding Venue</h2>
+          <p class="label-cap text-lp-sage">Read the post →</p>
+        </a>
+        <a href="https://www.longpondplantationevents.com/post/how-to-choose-the-perfect-wedding-videographer-for-your-big-day" target="_blank" rel="noopener" class="block bg-lp-white border border-lp-cream shadow-card p-8 space-y-3 transition-[transform,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage">
+          <p class="label-cap">From the journal</p>
+          <h2 class="font-display text-[17px] leading-snug">How to Choose the Perfect Wedding Videographer for your Big Day</h2>
+          <p class="label-cap text-lp-sage">Read the post →</p>
+        </a>
+        <a href="https://www.longpondplantationevents.com/post/essential-tips-for-your-dream-fall-wedding" target="_blank" rel="noopener" class="block bg-lp-white border border-lp-cream shadow-card p-8 space-y-3 transition-[transform,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage">
+          <p class="label-cap">From the journal</p>
+          <h2 class="font-display text-[17px] leading-snug">Essential Tips for your Dream Fall Wedding</h2>
+          <p class="label-cap text-lp-sage">Read the post →</p>
+        </a>
+        <a href="https://www.longpondplantationevents.com/post/essential-elements-to-include-on-your-free-wedding-website" target="_blank" rel="noopener" class="block bg-lp-white border border-lp-cream shadow-card p-8 space-y-3 transition-[transform,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage">
+          <p class="label-cap">From the journal</p>
+          <h2 class="font-display text-[17px] leading-snug">Essential Elements to Include on your Free Wedding Website</h2>
+          <p class="label-cap text-lp-sage">Read the post →</p>
+        </a>
+        <a href="https://www.longpondplantationevents.com/post/top-spring-wedding-floral-trends-you-need-to-know" target="_blank" rel="noopener" class="block bg-lp-white border border-lp-cream shadow-card p-8 space-y-3 transition-[transform,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage">
+          <p class="label-cap">From the journal</p>
+          <h2 class="font-display text-[17px] leading-snug">Top Spring Wedding Floral Trends you Need to Know</h2>
+          <p class="label-cap text-lp-sage">Read the post →</p>
+        </a>
+        <a href="https://www.longpondplantationevents.com/post/the-essential-benefits-of-hiring-a-wedding-coordinator" target="_blank" rel="noopener" class="block bg-lp-white border border-lp-cream shadow-card p-8 space-y-3 transition-[transform,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage">
+          <p class="label-cap">From the journal</p>
+          <h2 class="font-display text-[17px] leading-snug">The Essential Benefits of Hiring a Wedding Coordinator</h2>
+          <p class="label-cap text-lp-sage">Read the post →</p>
+        </a>
+        <a href="https://www.longpondplantationevents.com/post/stunning-wedding-tablescape-trends-to-elevate-your-big-day" target="_blank" rel="noopener" class="block bg-lp-white border border-lp-cream shadow-card p-8 space-y-3 transition-[transform,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage">
+          <p class="label-cap">From the journal</p>
+          <h2 class="font-display text-[17px] leading-snug">Stunning Wedding Tablescape Trends to Elevate your Big Day</h2>
+          <p class="label-cap text-lp-sage">Read the post →</p>
+        </a>
+        <a href="https://www.longpondplantationevents.com/post/master-old-florida-wedding-venue-trends-now" target="_blank" rel="noopener" class="block bg-lp-white border border-lp-cream shadow-card p-8 space-y-3 transition-[transform,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage">
+          <p class="label-cap">From the journal</p>
+          <h2 class="font-display text-[17px] leading-snug">Master Old Florida Wedding Venue Trends now</h2>
+          <p class="label-cap text-lp-sage">Read the post →</p>
+        </a>
+        <a href="https://www.longpondplantationevents.com/post/charming-spring-wedding-ideas-for-your-perfect-outdoor-ceremony" target="_blank" rel="noopener" class="block bg-lp-white border border-lp-cream shadow-card p-8 space-y-3 transition-[transform,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage">
+          <p class="label-cap">From the journal</p>
+          <h2 class="font-display text-[17px] leading-snug">Charming Spring Wedding Ideas for your Perfect Outdoor Ceremony</h2>
+          <p class="label-cap text-lp-sage">Read the post →</p>
+        </a>
+        <a href="https://www.longpondplantationevents.com/post/the-ultimate-guide-to-wedding-floral-rentals-for-your-dream-celebration" target="_blank" rel="noopener" class="block bg-lp-white border border-lp-cream shadow-card p-8 space-y-3 transition-[transform,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage">
+          <p class="label-cap">From the journal</p>
+          <h2 class="font-display text-[17px] leading-snug">The Ultimate Guide to Wedding Floral Rentals for your Dream Celebration</h2>
+          <p class="label-cap text-lp-sage">Read the post →</p>
+        </a>
+        <a href="https://www.longpondplantationevents.com/post/10-essential-qualities-to-consider-when-hiring-a-wedding-bartender" target="_blank" rel="noopener" class="block bg-lp-white border border-lp-cream shadow-card p-8 space-y-3 transition-[transform,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage">
+          <p class="label-cap">From the journal</p>
+          <h2 class="font-display text-[17px] leading-snug">10 Essential Qualities to Consider when Hiring a Wedding Bartender</h2>
+          <p class="label-cap text-lp-sage">Read the post →</p>
+        </a>
+        <a href="https://www.longpondplantationevents.com/post/essential-tips-for-a-seamless-wedding-ceremony-experience" target="_blank" rel="noopener" class="block bg-lp-white border border-lp-cream shadow-card p-8 space-y-3 transition-[transform,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage">
+          <p class="label-cap">From the journal</p>
+          <h2 class="font-display text-[17px] leading-snug">Essential Tips for a Seamless Wedding Ceremony Experience</h2>
+          <p class="label-cap text-lp-sage">Read the post →</p>
+        </a>
+      </div>
+    </section>
+    <section class="band-cream grain text-center px-6 py-[clamp(3.5rem,7vw,6rem)]">
+      <p class="font-script text-4xl md:text-5xl relative z-10">ready to see it in person?</p>
+      <div class="mt-8 relative z-10">
+        <a href="https://book.squareup.com/appointments/yvodeqjpykfqr5/location/LNQT4940CN97Y/services" target="_blank" rel="noopener" class="btn-dark">Book a tour</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-lp-cream">
+    <div class="max-w-site mx-auto px-6 py-14 grid md:grid-cols-3 gap-10 items-center">
+      <div class="flex items-center justify-center md:justify-start gap-5">
+        <span class="label-cap">Follow</span>
+        <a href="https://www.facebook.com/profile.php?id=61559171769389" class="w-9 h-9 rounded-full bg-lp-charcoal text-lp-white grid place-items-center text-[13px] font-sans transition-[transform,opacity] duration-300 hover:-translate-y-0.5 hover:opacity-80 active:translate-y-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage" aria-label="Long Pond Plantation on Facebook">f</a>
+        <a href="https://www.instagram.com/longpondplantationevents" class="w-9 h-9 rounded-full bg-lp-charcoal text-lp-white grid place-items-center text-[13px] font-sans transition-[transform,opacity] duration-300 hover:-translate-y-0.5 hover:opacity-80 active:translate-y-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage" aria-label="Long Pond Plantation on Instagram">ig</a>
+      </div>
+      <div class="flex justify-center gap-3">
+        <!-- MEDIA SLOT: footer gallery strip -->
+        <img src="assets/img/barn-at-night.jpg" alt="" class="w-24 h-24 object-cover" />
+        <img src="assets/img/chapel-cross.jpg" alt="" class="w-24 h-24 object-cover" />
+        <img src="assets/img/mossy-oaks-marsh.jpg" alt="" class="w-24 h-24 object-cover" />
+      </div>
+      <div class="text-center md:text-right space-y-1">
+        <p class="label-cap">(3XX) XXX-XXXX — pending</p>
+        <p class="font-sans font-light text-[14px] tracking-bodywide">Chiefland, Florida 32626</p>
+        <p class="font-sans font-light text-[14px] tracking-bodywide"><a href="mailto:longpondplantationevents@gmail.com" class="hover:opacity-60 transition-opacity duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lp-sage">longpondplantationevents@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="border-t border-lp-cream">
+      <div class="max-w-site mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-3">
+        <p class="label-cap">© 2026 Long Pond Plantation · Beauchamp Acres, LLC</p>
+        <p class="label-cap"><a href="vendors.html" class="hover:opacity-60 transition-opacity duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lp-sage">Preferred Vendors &amp; FAQ</a> &nbsp;·&nbsp; <a href="blog.html" class="hover:opacity-60 transition-opacity duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lp-sage">Blog</a></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
