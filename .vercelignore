@@ -1,0 +1,7 @@
+brand_assets/
+_dev/
+temporary screenshots/
+node_modules/
+*.md
+*.mjs
+.gitignore
