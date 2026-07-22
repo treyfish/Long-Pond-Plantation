@@ -1,7 +1,7 @@
     <!-- ======= GRACE & CO HERO ======= -->
     <section class="relative h-[46vh] min-h-[340px] overflow-hidden">
       <!-- MEDIA SLOT: candle trio product shot -->
-      <img src="assets/img/candle-long-pond-sunset.jpg" alt="Grace and Co. soy candles" class="absolute inset-0 w-full h-full object-cover" />
+      <img src="assets/img/candle-hero.jpg" alt="Grace and Co. Long Pond Sunset candle" class="absolute inset-0 w-full h-full object-cover" />
       <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-black/20"></div>
       <div class="absolute inset-0 bg-lp-sage mix-blend-multiply opacity-20"></div>
       <div class="absolute inset-x-0 top-14 text-center space-y-3 rise rise-1">
@@ -26,7 +26,7 @@
 
           <figure class="bg-lp-white shadow-card">
             <div class="relative overflow-hidden aspect-square">
-              <img src="assets/img/candle-long-pond-sunset.jpg" alt="Long Pond Sunset candle" class="w-full h-full object-cover" />
+              <img src="assets/img/candle-square.jpg" alt="Long Pond Sunset candle" class="w-full h-full object-cover" />
             </div>
             <figcaption class="p-6 text-center space-y-2">
               <p class="font-display uppercase tracking-hero text-[13px]">Long Pond Sunset</p>
