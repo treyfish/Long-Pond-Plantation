@@ -12,11 +12,94 @@
       <p class="font-display text-xl md:text-2xl leading-relaxed max-w-2xl mx-auto">Old-Florida marsh-front wedding venue where mossy live oaks meet timeless Southern elegance</p>
     </section>
 
-    <!-- ======= AERIAL ======= -->
-    <section class="max-w-4xl mx-auto px-6">
-      <!-- MEDIA SLOT: Maudie Lucas aerial of the historic home -->
-      <img src="assets/img/historic-home-aerial.jpg" alt="Aerial view of the historic home beneath the oaks" class="w-full shadow-card" />
+
+    <!-- ======= A DAY AT LONG POND — scroll-pinned story (per design handoff) ======= -->
+    <style>
+      #day { position: relative; height: 420vh; background: #0e110b; }
+      #day .sticky { position: sticky; top: 0; height: 100vh; overflow: hidden; }
+      #day .scene { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .25s linear; }
+      #day .scrim { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(14,17,11,.62) 0%, rgba(14,17,11,.12) 40%, rgba(14,17,11,.78) 100%); }
+      #day .eyebrow { position: absolute; top: 96px; left: clamp(20px,5vw,72px); display: flex; align-items: center; gap: 16px; }
+      #day .eyebrow span.bar { width: 56px; height: 1px; background: #c2a069; display: inline-block; }
+      #day .eyebrow span.txt { font-family: 'Karla', sans-serif; font-size: 11.5px; letter-spacing: .45em; color: #e0c48f; font-weight: 500; }
+      #day .caption { position: absolute; left: clamp(20px,5vw,72px); right: clamp(20px,5vw,72px); bottom: clamp(48px,9vh,92px); }
+      #day .time { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: clamp(18px,1.8vw,24px); color: #e8cf9c; margin-bottom: 10px; }
+      #day .title { font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: clamp(36px,5vw,72px); line-height: 1.05; max-width: 14ch; text-wrap: balance; color: #f2ede2; }
+      #day .cap { font-family: 'Karla', sans-serif; font-size: 14px; letter-spacing: .06em; color: rgba(242,237,226,.75); font-weight: 300; margin-top: 14px; max-width: 52ch; line-height: 1.7; }
+      #day .track { margin-top: 28px; height: 1px; background: rgba(242,237,226,.18); position: relative; }
+      #day .fill { position: absolute; left: 0; top: 0; bottom: 0; width: 0%; background: #c2a069; transition: width .2s linear; }
+      #day .labels { display: flex; justify-content: space-between; margin-top: 10px; font-family: 'Karla', sans-serif; font-size: 9.5px; letter-spacing: .3em; color: rgba(242,237,226,.45); }
+      @media (prefers-reduced-motion: reduce) {
+        #day { height: 100vh; }
+        #day .scene { transition: none; }
+        #day .scene[data-i="3"] { opacity: 1 !important; }
+      }
+    </style>
+    <section id="day">
+      <div class="sticky">
+        <img class="scene" data-i="0" src="assets/img/day-morning.jpg" alt="Morning light over the historic home" />
+        <img class="scene" data-i="1" src="assets/img/day-vows.jpg" alt="Vows at the arbor beneath the oaks" />
+        <img class="scene" data-i="2" src="assets/img/day-golden.jpg" alt="Golden hour over the marsh" />
+        <img class="scene" data-i="3" src="assets/img/day-night.jpg" alt="The last dance in the White Barn" />
+        <div class="scrim"></div>
+        <div class="eyebrow"><span class="bar"></span><span class="txt">A DAY AT LONG POND</span></div>
+        <div class="caption">
+          <div class="time" id="d-time">7:00 AM</div>
+          <div class="title" id="d-title">First light, first pour</div>
+          <div class="cap" id="d-cap">Woodys Coffee pours for the whole bridal party as the mist lifts off the pond.</div>
+          <div class="track"><div class="fill" id="d-fill"></div></div>
+          <div class="labels"><span>MORNING</span><span>CEREMONY</span><span>GOLDEN HOUR</span><span>LAST DANCE</span></div>
+        </div>
+      </div>
     </section>
+    <script>
+      (function () {
+        var section = document.getElementById('day');
+        var imgs = Array.prototype.slice.call(section.querySelectorAll('.scene'));
+        var elTime = document.getElementById('d-time');
+        var elTitle = document.getElementById('d-title');
+        var elCap = document.getElementById('d-cap');
+        var elFill = document.getElementById('d-fill');
+        var scenes = [
+          { t: '7:00 AM',  title: 'First light, first pour', cap: 'Woodys Coffee pours for the whole bridal party as the mist lifts off the pond.' },
+          { t: '4:00 PM',  title: 'Vows under the oaks',     cap: 'Spanish moss overhead, a perfect balance of shade and light on the ceremony lawn.' },
+          { t: '7:30 PM',  title: 'Golden hour',             cap: 'The sky melts into pinks and golds over Long Pond \u2014 portraits your photographer will frame forever.' },
+          { t: '10:00 PM', title: 'Last dance in the barn',  cap: '2,800 square feet glowing late into the night.' }
+        ];
+        var N = scenes.length;
+        var lastP = -1, lastAct = -1;
+        var clamp = function (v, lo, hi) { return Math.max(lo, Math.min(hi, v)); };
+        function render() {
+          var r = section.getBoundingClientRect();
+          var total = r.height - window.innerHeight;
+          var p = total > 0 ? clamp(-r.top / total, 0, 1) : 0;
+          if (Math.abs(p - lastP) < 0.002) return;
+          lastP = p;
+          var seg = p * N;
+          var act = clamp(Math.floor(seg), 0, N - 1);
+          imgs.forEach(function (img, i) {
+            img.style.opacity = clamp(1 - Math.max(0, Math.abs(seg - (i + 0.5)) - 0.35) * 4, 0, 1);
+          });
+          elFill.style.width = (p * 100).toFixed(1) + '%';
+          if (act !== lastAct) {
+            lastAct = act;
+            elTime.textContent = scenes[act].t;
+            elTitle.textContent = scenes[act].title;
+            elCap.textContent = scenes[act].cap;
+          }
+        }
+        var ticking = false;
+        function onScroll() {
+          if (ticking) return;
+          ticking = true;
+          requestAnimationFrame(function () { render(); ticking = false; });
+        }
+        window.addEventListener('scroll', onScroll, { passive: true });
+        window.addEventListener('resize', function () { lastP = -1; render(); }, { passive: true });
+        render();
+      })();
+    </script>
+
 
     <!-- ======= WHERE IT ALL BEGAN ======= -->
     <section class="text-center px-6 py-[clamp(3.5rem,7vw,6rem)]">

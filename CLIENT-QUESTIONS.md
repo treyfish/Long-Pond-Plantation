@@ -13,3 +13,4 @@
 - **Family portrait:** About page currently uses Stacey's solo portrait from the old site — a proper family/couple portrait would be better.
 - **Blog migration:** blog.html currently links to the 14 posts on the old Wix blog. At domain cutover those URLs die — posts need migrating (export from Wix or rewrite) before the old site is retired.
 - **Square:** tours/bookings/payments confirmed through Square (book.squareup.com/appointments/yvodeqjpykfqr5). All tour CTAs now link there.
+- **'A Day at Long Pond' captions:** The new weddings-page scroll story says Woodys Coffee pours for the bridal party in the morning (softened from the prototype's 'our treat'). Confirm with the client that morning coffee for the bridal party is actually offered, and that the 7AM/4PM/7:30PM/10PM scene times feel right.
