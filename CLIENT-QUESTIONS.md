@@ -1,6 +1,6 @@
 # Client Questions — logged during build (per LOOP-PROMPT.md)
 
-- **Phone number:** No phone number found on the current site or Facebook. Footer uses a placeholder — need the venue's public phone number.
+- ~~**Phone number:**~~ **RESOLVED 2026-07-23:** (352) 356-1112 (from Trey) — now in footer + contact page as tel: links.
 - **Street address:** Current site only shows "Chiefland, FL 32626". Woodys FB suggests ~8350 NW Hwy 19 — confirm the address to publish for the venue itself.
 - **Third testimonial:** Only two written testimonials exist (Michael, Jessica Hiers). Homepage testimonial band has a third slot marked placeholder — need one more quote (the FB reviews video may have candidates).
 - **Contact form endpoint:** Form posts to a placeholder (no backend). Tour booking now goes through Square (per Trey) — decide whether the qualification form should also send somewhere (Formspree/serverless) or be trimmed since Square captures bookings. SMS-consent checkbox included WM-style — confirm language.

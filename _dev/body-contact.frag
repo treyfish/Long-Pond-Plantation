@@ -113,7 +113,7 @@
       <div class="max-w-site mx-auto grid md:grid-cols-2 gap-10 text-center relative z-10">
         <div class="space-y-2">
           <h2 class="h-serif text-lg">Long Pond Plantation</h2>
-          <p class="font-sans font-light text-[14px] tracking-bodywide leading-[1.7]">Chiefland, Florida 32626<br/><a href="mailto:longpondplantationevents@gmail.com" class="hover:opacity-60 transition-opacity duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lp-sage">longpondplantationevents@gmail.com</a></p>
+          <p class="font-sans font-light text-[14px] tracking-bodywide leading-[1.7]"><a href="tel:+13523561112" class="hover:opacity-60 transition-opacity duration-300">(352) 356-1112</a><br/>Chiefland, Florida 32626<br/><a href="mailto:longpondplantationevents@gmail.com" class="hover:opacity-60 transition-opacity duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lp-sage">longpondplantationevents@gmail.com</a></p>
         </div>
         <div class="space-y-2">
           <h2 class="h-serif text-lg">Woodys Coffee Co.</h2>
