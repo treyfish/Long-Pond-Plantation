@@ -122,9 +122,9 @@
     </section>
 
 
-    <!-- ======= A DAY AT LONG POND — scroll-pinned story (per design handoff) ======= -->
+    <!-- ======= A DAY AT LONG POND — scroll-pinned story (per design handoff, 6 scenes) ======= -->
     <style>
-      #day { position: relative; height: 420vh; background: #0e110b; }
+      #day { position: relative; height: 700vh; background: #0e110b; }
       #day .sticky { position: sticky; top: 0; height: 100vh; overflow: hidden; }
       #day .scene { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .25s linear; }
       #day .scrim { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(14,17,11,.62) 0%, rgba(14,17,11,.12) 40%, rgba(14,17,11,.78) 100%); }
@@ -138,26 +138,29 @@
       #day .track { margin-top: 28px; height: 1px; background: rgba(242,237,226,.18); position: relative; }
       #day .fill { position: absolute; left: 0; top: 0; bottom: 0; width: 0%; background: #c2a069; transition: width .2s linear; }
       #day .labels { display: flex; justify-content: space-between; margin-top: 10px; font-family: 'Karla', sans-serif; font-size: 9.5px; letter-spacing: .3em; color: rgba(242,237,226,.45); }
+      @media (max-width: 640px) { #day .labels span:nth-child(even) { display: none; } }
       @media (prefers-reduced-motion: reduce) {
         #day { height: 100vh; }
         #day .scene { transition: none; }
-        #day .scene[data-i="3"] { opacity: 1 !important; }
+        #day .scene[data-i="5"] { opacity: 1 !important; }
       }
     </style>
     <section id="day">
       <div class="sticky">
-        <img class="scene" data-i="0" src="assets/img/day-morning.jpg" alt="Morning light over the historic home" />
-        <img class="scene" data-i="1" src="assets/img/day-vows.jpg" alt="Vows at the arbor beneath the oaks" />
-        <img class="scene" data-i="2" src="assets/img/day-golden.jpg" alt="Golden hour over the marsh" />
-        <img class="scene" data-i="3" src="assets/img/day-night.jpg" alt="The last dance in the White Barn" />
+        <img class="scene" data-i="0" src="assets/img/woodys-espresso.jpg" alt="Espresso pouring at Woodys Coffee" />
+        <img class="scene" data-i="1" src="assets/img/day-ready.jpg" alt="Bride in the light-filled bridal suite" />
+        <img class="scene" data-i="2" src="assets/img/day-vows.jpg" alt="Vows at the arbor beneath the oaks" />
+        <img class="scene" data-i="3" src="assets/img/day-dinner.jpg" alt="Farm tables set for dinner in the White Barn" />
+        <img class="scene" data-i="4" src="assets/img/day-golden.jpg" alt="Golden hour over the marsh" />
+        <img class="scene" data-i="5" src="assets/img/day-night.jpg" alt="The last dance in the White Barn" />
         <div class="scrim"></div>
         <div class="eyebrow"><span class="bar"></span><span class="txt">A DAY AT LONG POND</span></div>
         <div class="caption">
           <div class="time" id="d-time">7:00 AM</div>
           <div class="title" id="d-title">First light, first pour</div>
-          <div class="cap" id="d-cap">Woodys Coffee pours for the whole bridal party as the mist lifts off the pond.</div>
+          <div class="cap" id="d-cap">Woodys Coffee pulls the first shots of the day while the bridal party settles in.</div>
           <div class="track"><div class="fill" id="d-fill"></div></div>
-          <div class="labels"><span>MORNING</span><span>CEREMONY</span><span>GOLDEN HOUR</span><span>LAST DANCE</span></div>
+          <div class="labels"><span>MORNING</span><span>GETTING READY</span><span>CEREMONY</span><span>DINNER</span><span>GOLDEN HOUR</span><span>LAST DANCE</span></div>
         </div>
       </div>
     </section>
@@ -170,10 +173,12 @@
         var elCap = document.getElementById('d-cap');
         var elFill = document.getElementById('d-fill');
         var scenes = [
-          { t: '7:00 AM',  title: 'First light, first pour', cap: 'Woodys Coffee pours for the whole bridal party as the mist lifts off the pond.' },
-          { t: '4:00 PM',  title: 'Vows under the oaks',     cap: 'Spanish moss overhead, a perfect balance of shade and light on the ceremony lawn.' },
-          { t: '7:30 PM',  title: 'Golden hour',             cap: 'The sky melts into pinks and golds over Long Pond \u2014 portraits your photographer will frame forever.' },
-          { t: '10:00 PM', title: 'Last dance in the barn',  cap: '2,800 square feet glowing late into the night.' }
+          { t: '7:00 AM',  title: 'First light, first pour',  cap: 'Woodys Coffee pulls the first shots of the day while the bridal party settles in.' },
+          { t: '10:00 AM', title: 'Getting ready',            cap: 'Soft light in the bridal suite \u2014 and a pool game already underway in the guys lounge.' },
+          { t: '4:00 PM',  title: 'Vows under the oaks',      cap: 'Spanish moss overhead, a perfect balance of shade and light at the arbor.' },
+          { t: '6:30 PM',  title: 'Dinner in the White Barn', cap: 'Chandelier light over 2,800 square feet of long farm tables.' },
+          { t: '7:30 PM',  title: 'Golden hour',              cap: 'The sky melts into pinks and golds over Long Pond \u2014 portraits your photographer will frame forever.' },
+          { t: '10:00 PM', title: 'Last dance in the barn',   cap: 'Glow sticks up, the barn humming late into the night.' }
         ];
         var N = scenes.length;
         var lastP = -1, lastAct = -1;
