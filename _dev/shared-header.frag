@@ -1,7 +1,7 @@
 <header class="bg-lp-white pt-10 pb-0 text-center">
     <!-- Swap this text lockup for the watercolor logo asset when brand_assets/ delivers it -->
     <a href="index.html" class="inline-block focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage">
-      <img src="assets/img/logo-watercolor.jpg" alt="Long Pond Plantation — Weddings &amp; Events" class="h-36 md:h-44 w-auto mx-auto" />
+      <img src="assets/img/logo-watercolor.jpg" alt="Long Pond Plantation — Weddings &amp; Events" class="h-48 md:h-60 w-auto mx-auto" />
       <span class="label-cap mt-3 block">Chiefland, Florida</span>
     </a>
     <nav aria-label="Primary" class="mt-8 border-b border-lp-cream">

@@ -86,7 +86,7 @@
           <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
             <img class="w-full md:col-span-2 md:row-span-2 aspect-square md:aspect-auto md:h-full object-cover shadow-card" src="assets/img/groom-pool.jpg" alt="Groom at the pool table in the guys lounge" />
             <img class="w-full aspect-square object-cover shadow-card" src="assets/img/groom-bowtie.jpg" alt="Adjusting the bow tie" />
-            <img class="w-full aspect-square object-cover shadow-card" src="assets/img/groom-suite-pool.jpg" alt="The guys lounge pool table" />
+            <img class="w-full aspect-square object-cover shadow-card" src="assets/img/lounge-cue.jpg" alt="Lining up the shot" />
             <img class="w-full aspect-square object-cover shadow-card" src="assets/img/lounge-groomsmen.jpg" alt="Groomsmen around the pool table" />
             <img class="w-full aspect-square object-cover shadow-card" src="assets/img/firepit-lawn.jpg" alt="The grounds from above" />
           </div>

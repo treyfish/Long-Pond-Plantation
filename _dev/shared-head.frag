@@ -56,9 +56,9 @@
              focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage;
     }
     .h-serif   { @apply font-display uppercase tracking-hero text-lp-ink; }
-    .label-cap { @apply font-sans font-light uppercase tracking-label text-[12px] text-lp-soft; }
+    .label-cap { @apply font-sans font-normal uppercase tracking-label text-[12px] text-[#4A4646]; }
     .nav-link  {
-      @apply font-sans font-light uppercase tracking-label text-[12px] text-lp-ink whitespace-nowrap
+      @apply font-sans font-normal uppercase tracking-label text-[13px] text-lp-ink whitespace-nowrap
              transition-opacity duration-300 hover:opacity-60 focus-visible:outline focus-visible:outline-2
              focus-visible:outline-offset-4 focus-visible:outline-lp-sage;
     }
