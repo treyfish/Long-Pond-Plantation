@@ -98,11 +98,6 @@
           <textarea id="message" name="message" rows="5" required class="w-full border border-lp-ink/30 bg-lp-white px-4 py-3 font-sans font-light text-[15px] focus:border-lp-sage focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lp-sage"></textarea>
         </div>
 
-        <label class="flex items-start gap-3 font-sans font-light text-[13px] leading-[1.7] text-lp-soft">
-          <input type="checkbox" name="sms-consent" class="mt-1 accent-[#809A91]" />
-          I agree to receive text messages from Long Pond Plantation about pricing and event reminders. Message and data rates may apply. Reply STOP to opt out.
-        </label>
-
         <button type="submit" class="w-full bg-lp-rose text-lp-white font-sans font-light text-[13px] tracking-label uppercase px-10 py-4 transition-[transform,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 hover:opacity-90 active:translate-y-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lp-sage">Submit</button>
         <p data-sent class="hidden text-center label-cap text-lp-sagedeep">Thank you — we'll be in touch soon! (Demo only: form endpoint pending)</p>
       </form>

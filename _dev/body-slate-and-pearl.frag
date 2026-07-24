@@ -1,7 +1,7 @@
     <!-- ======= SP HERO ======= -->
     <section class="relative h-[46vh] min-h-[340px] overflow-hidden">
       <!-- MEDIA SLOT: styled tablescape with glassware + florals -->
-      <img src="assets/img/sp-bar-cart.jpg" alt="Styled tablescape by Slate and Pearl Events" class="absolute inset-0 w-full h-full object-cover" />
+      <img src="assets/img/sp-bar-cart.jpg" alt="The staffed outdoor bar" class="absolute inset-0 w-full h-full object-cover" />
       <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-black/20"></div>
       <div class="absolute inset-0 bg-lp-sage mix-blend-multiply opacity-20"></div>
       <div class="absolute inset-x-0 top-14 text-center space-y-3 rise rise-1">
@@ -38,14 +38,14 @@
         <div class="grid md:grid-cols-3 gap-8 mt-12">
           <div class="bg-lp-white shadow-card p-8 text-center space-y-4">
             <div class="relative overflow-hidden aspect-[4/3]">
-              <img src="assets/img/chapel-styled.jpg" alt="Wedding design" class="w-full h-full object-cover" />
+              <img src="assets/img/barn-chandelier-tables.jpg" alt="The White Barn dressed for a reception" class="w-full h-full object-cover" />
             </div>
             <h3 class="font-display uppercase tracking-hero text-[14px]">Wedding Design</h3>
             <p class="font-sans font-light text-[14px] leading-[1.7]">Full design of your ceremony and reception — florals, tablescapes, and every thoughtful detail in between.</p>
           </div>
           <div class="bg-lp-white shadow-card p-8 text-center space-y-4">
             <div class="relative overflow-hidden aspect-[4/3]">
-              <img src="assets/img/ceremony-crowd-oaks.jpg" alt="Coordinating" class="w-full h-full object-cover" />
+              <img src="assets/img/ceremony-crowd-oaks.jpg" alt="A ceremony beneath the live oaks" class="w-full h-full object-cover" />
             </div>
             <h3 class="font-display uppercase tracking-hero text-[14px]">Coordinating</h3>
             <p class="font-sans font-light text-[14px] leading-[1.7]">Day-of and full-service coordination so you can be a guest at your own celebration.</p>
