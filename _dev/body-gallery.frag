@@ -174,7 +174,6 @@
           <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/benches-sunset.jpg" alt="Sunset over the benches" />
           <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/sunset-benches-arch.jpg" alt="Golden hour at the ceremony site" />
           <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/ceremony-oaks.jpg" alt="The ceremony lawn" />
-          <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/mossy-oaks-marsh.jpg" alt="Mossy oaks over the marsh" />
           <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/marsh-birds.jpg" alt="Birds over Long Pond" />
           <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/firepit-lawn.jpg" alt="The grounds from above" />
           <img class="w-full mb-4 break-inside-avoid shadow-card" src="assets/img/g/historic-home-aerial.jpg" alt="The historic home" />

@@ -195,7 +195,7 @@
           <h3 class="label-cap text-center mb-6">The Marsh &amp; Historic Home</h3>
           <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
             <img class="w-full md:col-span-2 md:row-span-2 aspect-square md:aspect-auto md:h-full object-cover shadow-card" src="assets/img/historic-home-aerial.jpg" alt="The historic home beneath the oaks" />
-            <img class="w-full aspect-square object-cover shadow-card" src="assets/img/mossy-oaks-marsh.jpg" alt="Mossy oaks over the marsh" />
+            <img class="w-full aspect-square object-cover shadow-card" src="assets/img/fountain-golden.jpg" alt="The fountain at golden hour" />
             <img class="w-full aspect-square object-cover shadow-card" src="assets/img/sunset-field-couple.jpg" alt="Couple at sunset over the marsh field" />
             <img class="w-full aspect-square object-cover shadow-card" src="assets/img/marsh-birds.jpg" alt="Birds over Long Pond" />
             <img class="w-full aspect-square object-cover shadow-card" src="assets/img/sunset-benches-arch.jpg" alt="Sunset over the ceremony site" />
