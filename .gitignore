@@ -4,3 +4,6 @@ temporary screenshots/
 package-lock.json
 brand_assets/interim/
 .vercel
+
+# comparison builds (not part of the site)
+*.zip
